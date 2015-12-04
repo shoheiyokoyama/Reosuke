@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - MSCollectionViewCalendarLayout (0.1.5)
+  - REFrostedViewController (2.4.8)
+  - RESideMenu (4.0.7)
+  - RNFrostedSidebar (0.2.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MSCollectionViewCalendarLayout
+  - REFrostedViewController (~> 2.4)
+  - RESideMenu (~> 4.0.7)
+  - RNFrostedSidebar (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  MSCollectionViewCalendarLayout: 9c52894930d6b712951f18873618fc32c00cd4fa
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  RNFrostedSidebar: 9491d8627e5e99b92334d36def432c0faf7ebae4
+
+COCOAPODS: 0.37.2
