@@ -23,10 +23,10 @@
     self = [super init];
     if (self) {
         self.view.backgroundColor = [UIColor whiteColor];
-        self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+//        self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
 //        [self setRNFrostedSidebarSidebar];
         [self setRESideMenu];
-        [self getData];
+//        [self getData];
         
         
         
@@ -35,6 +35,8 @@
         imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self.view addSubview:imageView];
+        
+        
         
     }
     return self;
@@ -71,7 +73,7 @@
     
     [self.manager getAreaData:^(NSMutableArray *items, NSError *error) {
         //
-    }];
+    } area:@"豊田"];
 }
 
 - (void)setRESideMenu {
@@ -86,6 +88,7 @@
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:(SideMenuNavigationController *)self.navigationController
                                                                             action:@selector(showMenu)];
+//    SideMenuNavigationController.title = @"Reosuke";
     
 }
 

@@ -21,6 +21,9 @@
 		6DACED871C0EE91C0002C200 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DACED861C0EE91C0002C200 /* MenuViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6DACED8A1C0EEA6F0002C200 /* SideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DACED891C0EEA6F0002C200 /* SideMenuNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		6DACED8E1C1185290002C200 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DACED8D1C1185290002C200 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6DACED921C141DA40002C200 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DACED911C141DA40002C200 /* CustomAnnotation.m */; settings = {ASSET_TAGS = (); }; };
+		6DE9FE5F1C1AB364000BF147 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE9FE5D1C1AB364000BF147 /* CustomCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		6DE9FE601C1AB364000BF147 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DE9FE5E1C1AB364000BF147 /* CustomCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,11 @@
 		6DACED891C0EEA6F0002C200 /* SideMenuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuNavigationController.m; sourceTree = "<group>"; };
 		6DACED8C1C1185290002C200 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		6DACED8D1C1185290002C200 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		6DACED901C141DA40002C200 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		6DACED911C141DA40002C200 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		6DE9FE5C1C1AB364000BF147 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		6DE9FE5D1C1AB364000BF147 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		6DE9FE5E1C1AB364000BF147 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		8CB0A861666E5491C0443F96 /* Pods-Reosuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reosuke.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reosuke/Pods-Reosuke.release.xcconfig"; sourceTree = "<group>"; };
 		E3A93DF61067A29CC63F93FB /* libPods-Reosuke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,10 +139,10 @@
 		6D7793A61C0C0BB0008B011E /* Reosuke */ = {
 			isa = PBXGroup;
 			children = (
-				6D7793DD1C0C353E008B011E /* DataManager.h */,
-				6D7793DE1C0C353E008B011E /* DataManager.m */,
 				6D7793AA1C0C0BB0008B011E /* AppDelegate.h */,
 				6D7793AB1C0C0BB0008B011E /* AppDelegate.m */,
+				6DE9FE611C1AB3A4000BF147 /* Views */,
+				6DACED8F1C141D6A0002C200 /* Models */,
 				6DACED8B1C0EEBDC0002C200 /* Controllers */,
 				6D7793B01C0C0BB0008B011E /* Main.storyboard */,
 				6D7793B31C0C0BB0008B011E /* Assets.xcassets */,
@@ -186,6 +194,27 @@
 				6D7793AE1C0C0BB0008B011E /* ViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6DACED8F1C141D6A0002C200 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D7793DD1C0C353E008B011E /* DataManager.h */,
+				6D7793DE1C0C353E008B011E /* DataManager.m */,
+				6DACED901C141DA40002C200 /* CustomAnnotation.h */,
+				6DACED911C141DA40002C200 /* CustomAnnotation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6DE9FE611C1AB3A4000BF147 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DE9FE5C1C1AB364000BF147 /* CustomCollectionViewCell.h */,
+				6DE9FE5D1C1AB364000BF147 /* CustomCollectionViewCell.m */,
+				6DE9FE5E1C1AB364000BF147 /* CustomCollectionViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		AA06123A944BAA26C4874AAA /* Pods */ = {
@@ -305,6 +334,7 @@
 				6D7793B71C0C0BB0008B011E /* LaunchScreen.storyboard in Resources */,
 				6D7793B41C0C0BB0008B011E /* Assets.xcassets in Resources */,
 				6D7793B21C0C0BB0008B011E /* Main.storyboard in Resources */,
+				6DE9FE601C1AB364000BF147 /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DACED921C141DA40002C200 /* CustomAnnotation.m in Sources */,
 				6D7793AF1C0C0BB0008B011E /* ViewController.m in Sources */,
 				6DACED871C0EE91C0002C200 /* MenuViewController.m in Sources */,
 				6DACED8A1C0EEA6F0002C200 /* SideMenuNavigationController.m in Sources */,
@@ -370,6 +401,7 @@
 				6D7793AC1C0C0BB0008B011E /* AppDelegate.m in Sources */,
 				6D7793A91C0C0BB0008B011E /* main.m in Sources */,
 				6D7793DC1C0C0DB0008B011E /* HomeViewController.m in Sources */,
+				6DE9FE5F1C1AB364000BF147 /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

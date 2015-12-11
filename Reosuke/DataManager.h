@@ -13,5 +13,5 @@
 typedef void (^GetRemoteCompletionHandler)(NSMutableArray *items, NSError *error);
 - (void)getJsonData:(GetRemoteCompletionHandler)completionHandler;
 + (instancetype)sharedManager;
-- (void)getAreaData:(GetRemoteCompletionHandler)completionHandler;
+- (void)getAreaData:(GetRemoteCompletionHandler)completionHandler area:(NSString *)area;
 @end

@@ -2,7 +2,7 @@
 //  main.m
 //  Reosuke
 //
-//  Created by 横山祥平 on 2015/11/30.
+//  Created by Shohei Yokoyama on 2015/11/30.
 //  Copyright © 2015年 Shohei. All rights reserved.
 //
 
