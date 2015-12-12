@@ -12,11 +12,18 @@
 #import "DataManager.h"
 #import "CustomAnnotation.h"
 #import "CustomCollectionViewCell.h"
+#import "SVProgressHUD.h"
 
-@interface MapViewController ()<MKMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+@interface MapViewController ()<MKMapViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, CustomCollectionDelegate>
 @property (nonatomic) MKMapView *mapView;
 @property (nonatomic) UICollectionView *collectionView;
 @property (nonatomic) NSMutableArray *items;
+@property (nonatomic) UIButton *olympicButton;
+@property (nonatomic) UIButton *foodButton;
+@property (nonatomic) UIButton *sightseeingButton;
+@property (nonatomic) BOOL isOlypic;
+@property (nonatomic) BOOL isSightseeing;
+@property (nonatomic) BOOL firstLoad;
 @end
 
 @implementation MapViewController
@@ -35,23 +42,35 @@
     return [DataManager sharedManager];
 }
 
-- (void)getData {
+- (void)getData:(NSString *)string {
+    self.firstLoad = YES;
+    [SVProgressHUD showWithStatus:string maskType:SVProgressHUDMaskTypeGradient];
     [self.manager getAreaData:^(NSMutableArray *items, NSError *error) {
         [self displayAnnotation:items];
         [self.collectionView reloadData];
+        self.olympicButton.hidden = NO;
+        self.foodButton.hidden = NO;
+        self.sightseeingButton.hidden = NO;
+        
+        [SVProgressHUD dismiss];
+        [SVProgressHUD showSuccessWithStatus:@"見つかりました！"];
     } area:@"新宿"];
 }
 
 - (void)setMapView {
+    self.isSightseeing = NO;
+    self.isOlypic = NO;
+    self.firstLoad = NO;
+    
     UIImage *menuImage = [UIImage imageNamed:@"hunberger"];
     UIGraphicsBeginImageContext(CGSizeMake(30, 20));
     [menuImage drawInRect:CGRectMake(0, 0, 30, 20)];
     UIImage *resizeImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:resizeImage
-                                                                             style:UIBarButtonItemStylePlain
-                                                                            target:(SideMenuNavigationController *)self.navigationController
-                                                                            action:@selector(showMenu)];
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:resizeImage
+//                                                                             style:UIBarButtonItemStylePlain
+//                                                                            target:(SideMenuNavigationController *)self.navigationController
+//                                                                            action:@selector(showMenu)];
     
     self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.mapView.frame = self.view.bounds;
@@ -78,9 +97,7 @@
     layout.minimumInteritemSpacing = 4.0f;//アイテム同士の間隔
     layout.minimumLineSpacing = 12.0f;//セクションとアイテムの間隔
     layout.itemSize = CGSizeMake(self.view.frame.size.width, 116);
-    float a = self.view.frame.size.width;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    
     
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 450, self.view.frame.size.width, 120) collectionViewLayout:layout];
     self.collectionView.backgroundColor = [UIColor clearColor];
@@ -93,9 +110,123 @@
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"CustomCollectionViewCell"];
     [self.mapView addSubview:self.collectionView];
     
+    self.olympicButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f, 430.0f, 80.0f, 20.0f)];
+    [self.olympicButton setTitle:@"olympic" forState:UIControlStateNormal];
+    [self.olympicButton.titleLabel setFont:[UIFont systemFontOfSize:13]];
+    [self.olympicButton addTarget:self action:@selector(tapOlympicButton:) forControlEvents:UIControlEventTouchDown];
+    self.olympicButton.backgroundColor = [UIColor colorWithRed:239.0f/255.0f green:72.0f/255.0f blue:54.0f/255.0f alpha:1.0f];
+    self.olympicButton.layer.cornerRadius = 3.0f;
+    [self.view addSubview:self.olympicButton];
     
+    self.foodButton = [[UIButton alloc] initWithFrame:CGRectMake(80.0f, 430.0f, 80.0f, 20.0f)];
+    [self.foodButton setTitle:@"food" forState:UIControlStateNormal];
+    [self.foodButton.titleLabel setFont:[UIFont systemFontOfSize:13]];
+    [self.foodButton addTarget:self action:@selector(tapFoodButton:) forControlEvents:UIControlEventTouchDown];
+    self.foodButton.backgroundColor = [UIColor colorWithRed:242.0f/255.0f green:120.0f/255.0f blue:75.0f/255.0f alpha:1.0f];
+    self.foodButton.layer.cornerRadius = 3.0f;
+    [self.view addSubview:self.foodButton];
+    
+    self.sightseeingButton = [[UIButton alloc] initWithFrame:CGRectMake(160.0f, 430.0f, 80.0f, 20.0f)];
+    [self.sightseeingButton setTitle:@"sightseeing" forState:UIControlStateNormal];
+    self.sightseeingButton.backgroundColor = [UIColor colorWithRed:65.0f/255.0f green:131.0f/255.0f blue:215.0f/255.0f alpha:1.0f];
+    [self.sightseeingButton addTarget:self action:@selector(tapSightseeingButton:) forControlEvents:UIControlEventTouchDown];
+    [self.sightseeingButton.titleLabel setFont:[UIFont systemFontOfSize:13]];
+    self.sightseeingButton.layer.cornerRadius = 3.0f;
+    [self.view addSubview:self.sightseeingButton];
+    
+    self.foodButton.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    [self.view bringSubviewToFront:self.foodButton];
+    
+    self.olympicButton.hidden = YES;
+    self.foodButton.hidden = YES;
+    self.sightseeingButton.hidden = YES;
+    
+    self.olympicButton.alpha = 0.7f;
+    self.foodButton.alpha = 1.0f;
+    self.sightseeingButton.alpha = 0.7f;
+
+}
+
+#pragma -mark Tap Action
+-(void)tapOlympicButton:(UIButton*)button{
+    self.olympicButton.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    self.foodButton.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    self.sightseeingButton.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    
+    [self.view bringSubviewToFront:self.olympicButton];
+    [self.view sendSubviewToBack:self.foodButton];
+    [self.view sendSubviewToBack:self.sightseeingButton];
+    [self.view sendSubviewToBack:self.mapView];
+    
+    [self getData:@"パブリックビューイングの場所を探しています"];
+    self.isSightseeing = NO;
+    self.isOlypic = YES;
+    
+    self.olympicButton.alpha = 1.0f;
+    self.foodButton.alpha = 0.7f;
+    self.sightseeingButton.alpha = 0.7f;
+}
+
+-(void)tapFoodButton:(UIButton*)button{
+    self.olympicButton.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    self.foodButton.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    self.sightseeingButton.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    
+    [self.view bringSubviewToFront:self.foodButton];
+    [self.view sendSubviewToBack:self.olympicButton];
+    [self.view sendSubviewToBack:self.sightseeingButton];
+    [self.view sendSubviewToBack:self.mapView];
+    
+    [self getData:@"あなたへのおすすめのお店を探しています"];
+    self.isSightseeing = NO;
+    self.isOlypic = NO;
+    
+    self.olympicButton.alpha = 0.7f;
+    self.foodButton.alpha = 1.0f;
+    self.sightseeingButton.alpha = 0.7f;
+}
+
+-(void)tapSightseeingButton:(UIButton*)button{
+    self.olympicButton.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    self.foodButton.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    self.sightseeingButton.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    
+    [self.view bringSubviewToFront:self.sightseeingButton];
+    [self.view sendSubviewToBack:self.olympicButton];
+    [self.view sendSubviewToBack:self.foodButton];
+    [self.view sendSubviewToBack:self.mapView];
+    
+    [self getData:@"あなたへのおすすめの観光地を探しています"];
+    self.isSightseeing = YES;
+    self.isOlypic = NO;
+    
+    self.olympicButton.alpha = 0.7f;
+    self.foodButton.alpha = 0.7f;
+    self.sightseeingButton.alpha = 1.0f;
+}
+
+#pragma -mark CustomCollectionViewCellDelegate
+- (void)tappedBack {
+    NSIndexPath *preIndexPath;
+    for (CustomCollectionViewCell *cell in [self.collectionView visibleCells]) {
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+        preIndexPath = [NSIndexPath indexPathForRow:(indexPath.row - 1) inSection:0];
+        
+    }
+    [self.collectionView scrollToItemAtIndexPath:preIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
     
 }
+
+- (void)tappedNext {
+    NSIndexPath *nextIndexPath;
+    for (CustomCollectionViewCell *cell in [self.collectionView visibleCells]) {
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+        nextIndexPath = [NSIndexPath indexPathForRow:(indexPath.row + 1) inSection:0];
+        
+    }
+    [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
+}
+
 
 - (void)displayAnnotation:(NSMutableArray *)arrays {
     self.items = arrays;
@@ -138,21 +269,43 @@
 }
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-//    NSString *cellId = @"UICollectionViewCell";
-//    UICollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
-    
-    
     CustomCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"CustomCollectionViewCell" forIndexPath:indexPath];
+    cell.delegate = self;
     
     NSMutableDictionary *itemDic = self.items[indexPath.row];
     
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:itemDic[@"image_url"][@"shop_image1"]]];
-//    UIImageView *cellImage = [[UIImageView alloc] initWithImage:[self trimSquareImage:[[UIImage alloc] initWithData:data]]];
     
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
     imageView.image = [self trimSquareImage:[[UIImage alloc] initWithData:data]];
     cell.shopName.text = itemDic[@"name"];
+    
+    UIColor *backColor = [UIColor colorWithWhite:1.0f alpha:0.85f];
+    cell.backgroundColor = backColor;
+    [cell.okLabel.layer setCornerRadius:5.0f]; //??
+    
+    if (indexPath.row == 0) {
+        cell.backButton.hidden = YES;
+    } else {
+        cell.backButton.hidden = NO;
+    }
+    
+    if (indexPath.row == self.items.count - 1) {
+        cell.nextButton.hidden = YES;
+    } else {
+        cell.nextButton.hidden = NO;
+    }
+    
+    if (self.isOlypic) {
+        imageView.image = [UIImage imageNamed:@"pablicView"];
+        cell.shopName.text = @"東京パブリックビューイング会場";
+    }
+    
+    if (self.isSightseeing) {
+        imageView.image = [UIImage imageNamed:@"sightseeing"];
+        cell.shopName.text = @"スカイツリー";
+    }
+    
     
     return cell;
 }
@@ -178,8 +331,29 @@
 }
 
 #pragma mark UICollectionViewDelegate
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    // tap action
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CustomCollectionViewCell *cell = (CustomCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    NSMutableDictionary *itemDic = self.items[indexPath.row];
+    
+    [self showAlert:@"予定を確定しますか？" array:@[cell.shopName.text, itemDic[@"access"][@"station"]] title:cell.shopName.text];
+    
+    
+}
+
+- (void)showAlert:(NSString *)message array:(NSArray *)array title:(NSString *)title
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        if ([self.delegate respondsToSelector:@selector(tappedCell:)]) {
+            [self.delegate tappedCell:array];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }]];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    }]];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 
@@ -206,7 +380,9 @@
 }
 
 -(void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
-    [self getData];
+    if (!self.firstLoad) {
+        [self getData:@"あなたへのおすすめのお店を探しています"];
+    }
 }
 
 -(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {

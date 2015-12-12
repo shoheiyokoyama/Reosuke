@@ -7,6 +7,7 @@ target 'Reosuke' do
  pod 'RESideMenu', '~> 4.0.7'
  pod 'MSCollectionViewCalendarLayout'
  pod 'REFrostedViewController', '~> 2.4'
+ pod 'SVProgressHUD'
 end
 
 target 'ReosukeTests' do

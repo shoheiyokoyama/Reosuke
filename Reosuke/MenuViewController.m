@@ -40,7 +40,7 @@
         imageView.clipsToBounds = YES;
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
-        label.text = @"Joe";
+        label.text = @"Joe Lewis Thomas";
         label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
@@ -110,9 +110,9 @@
         navigationController = [[SideMenuNavigationController alloc] initWithRootViewController:secondViewController];
         self.frostedViewController.contentViewController = navigationController;
     } else {
-        MapViewController *mapViewController = [[MapViewController alloc] init];
-        navigationController = [[SideMenuNavigationController alloc] initWithRootViewController:mapViewController];
-        self.frostedViewController.contentViewController = navigationController;
+//        MapViewController *mapViewController = [[MapViewController alloc] init];
+//        navigationController = [[SideMenuNavigationController alloc] initWithRootViewController:mapViewController];
+//        self.frostedViewController.contentViewController = navigationController;
     }
     
     [self.frostedViewController hideMenuViewController];
@@ -128,12 +128,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 3;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -147,10 +147,7 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"Home", @"Schedule", @"Map"];
-        cell.textLabel.text = titles[indexPath.row];
-    } else {
-        NSArray *titles = @[@"Ticket", @"Settings", @"Hotel"];
+        NSArray *titles = @[@"Home", @"Ticket", @"Result", @"Hotel Reserve", @"IC Card", @"Settings"];
         cell.textLabel.text = titles[indexPath.row];
     }
     

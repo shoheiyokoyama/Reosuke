@@ -11,7 +11,25 @@
 @implementation CustomCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    [self.backButton addTarget:self action:@selector(tapBackButton:) forControlEvents:UIControlEventTouchDown];
+    [self.nextButton addTarget:self action:@selector(tapNextButton:) forControlEvents:UIControlEventTouchDown];
+    
+    self.okLabel.layer.cornerRadius = 5.0f;
 }
+
+#pragma -mark Tap Action
+-(void)tapBackButton:(UIButton*)button{
+    if ([self.delegate respondsToSelector:@selector(tappedBack)]) {
+        [self.delegate tappedBack];
+    }
+}
+
+-(void)tapNextButton:(UIButton*)button{
+    if ([self.delegate respondsToSelector:@selector(tappedNext)]) {
+        [self.delegate tappedNext];
+    }
+}
+
+
 
 @end

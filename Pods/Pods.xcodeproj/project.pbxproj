@@ -7,691 +7,734 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		005A10044A6C75CD573A7700 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADC504F31BD29758CEEF57 /* SystemConfiguration.framework */; };
-		05A3E136015B2AA456FB0A9B /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F682A66C8314407F9A1EFB42 /* AFNetworkActivityIndicatorManager.h */; };
-		06615390D846B84B892DF7D2 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC00DDA555025321E8A2A75 /* Accelerate.framework */; };
-		06B8F1C092DA917F7C10C4CC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EAC931BC5C43D6C5306D6 /* AFSecurityPolicy.m */; };
-		0C45F16030E37E255E911F3B /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = D2363C99375DD1D6F4A036C2 /* AFURLConnectionOperation.h */; };
-		0C5BF9586AF4A48DD7AA1D4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679DB9985F60DEB811E894A /* Foundation.framework */; };
-		0C8310C501831B405F890DDF /* MSCollectionViewCalendarLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DAEE736802171C6016EE41D /* MSCollectionViewCalendarLayout.h */; };
-		12F64060B820F3597C3D428D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 56DD7EBF8F5CD679FB983B0D /* UIViewController+RESideMenu.m */; };
-		14C6A6FB7B440A5C3AE70DF7 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = E86AB08BAAFE5C017D636961 /* AFURLResponseSerialization.h */; };
-		1FAB935ACF9AC8123226A5F6 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E2C6D54BDB41015B18B7F8 /* AFNetworkActivityIndicatorManager.m */; };
-		21A44D404FC801E2E3C9829F /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 275786BAA48F8B5C3C98EE9F /* UIButton+AFNetworking.m */; };
-		22E0353394E88B9D05A531FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB2FBF6E37213165ACE6715 /* QuartzCore.framework */; };
-		2B160C37D6F8F73FBDA81F21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679DB9985F60DEB811E894A /* Foundation.framework */; };
-		32D4086498A5130DED3B9A9D /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8253C23B9DBD20D0F807009E /* UIProgressView+AFNetworking.h */; };
-		3847515DA1C28483E08A6122 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BBC565AAFC2FA9FF62727DF /* UIButton+AFNetworking.h */; };
-		3A71DE8C6DEF707BF4CE66CC /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BDBEDEC55D03E1BBED1DDE05 /* AFNetworkReachabilityManager.h */; };
-		3B3E3F60CFBA96DC2099B659 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E7F40FE6EA3FA05C5837AF /* AFNetworking.h */; };
-		40C988BF218D8F42DFFEF77F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAB81785A863AE0BFF0EAAD /* MobileCoreServices.framework */; };
-		447815B9E7048CAA8C56D659 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C41BB78126BB325097CBFFC4 /* UIWebView+AFNetworking.m */; };
-		45764628D90A4878A23F2E57 /* REFrostedContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A54456383F7AFF22B9D945FD /* REFrostedContainerViewController.h */; };
-		458A244DE0D22E1B5E599EB6 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFCF2A938B98D1FD62EF930 /* UIWebView+AFNetworking.h */; };
-		47A065BA927FEE821A34CAD0 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 14657BFD7A4EB4CA166FE651 /* AFSecurityPolicy.h */; };
-		4A2BDB8A29C2898797990D84 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5744A6BAF4D73E5FEEFB1978 /* UIAlertView+AFNetworking.h */; };
-		4A5074884C5DE79780C7361D /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE372DA780F694A339973DF /* AFHTTPSessionManager.h */; };
-		570BC5FC3AD0693EFEF6ED52 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6CCA0A9097EA1C21EF91D9 /* UIAlertView+AFNetworking.m */; };
-		57CE1F76A1CEB7227EC893A7 /* Pods-Reosuke-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF577CB1823211A6F51F06F /* Pods-Reosuke-AFNetworking-dummy.m */; };
-		5D0817FD3629C672BBFB99BE /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B87215E17D0A22326CD0AB /* RESideMenu.m */; };
-		6377ACC756AE669927F5523C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB2FBF6E37213165ACE6715 /* QuartzCore.framework */; };
-		6692C2C9260874BAFF13C5B8 /* UIImage+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B09654D0DB058561E92F080 /* UIImage+REFrostedViewController.h */; };
-		66A7320D2CD05B2D18380F54 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A9A182B3FC293DCEC3E33B /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m */; };
-		66B81519EA9E31D480F94E5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679DB9985F60DEB811E894A /* Foundation.framework */; };
-		68BEE3EA1D858BE941E3124E /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 553A585A5BE720B93671DD27 /* UIViewController+RESideMenu.h */; };
-		6F3C8F7BDAD85AAAFC9E6F4F /* UIViewController+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 34092A691223D24400B135E4 /* UIViewController+REFrostedViewController.h */; };
-		70169F85D9A8E5C3CF0741BE /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922F655752E027CFE58739A0 /* UIView+REFrostedViewController.m */; };
-		7349C1B5B60818BC9B2393F4 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D1BAEBAE2F6F067476DDEF37 /* UIActivityIndicatorView+AFNetworking.m */; };
-		73999CB9A1E7A4717626DA03 /* Pods-Reosuke-RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA749CD9A2A4D6A71C4BB6ED /* Pods-Reosuke-RESideMenu-dummy.m */; };
-		741EACE4D25554946CD40396 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1393C97E5BEA140F11DE25BF /* AFHTTPRequestOperationManager.m */; };
-		742BEFE1E06658D315CBE7B8 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = D6AF28E779B24EE1ACA7FE38 /* RECommonFunctions.h */; };
-		756492534B9F865651293F86 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 511B6A7C19B1D36C5B3BD209 /* AFURLRequestSerialization.h */; };
-		76BBEF69227B9360E7677955 /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 692496B7F7CC4BE614CB8FDE /* RESideMenu.h */; };
-		785CA33E2C68CAC01E36BC8C /* REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F054E163702FC4248BA89A2 /* REFrostedViewController.h */; };
-		7B81B32772F0F7699EF489B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679DB9985F60DEB811E894A /* Foundation.framework */; };
-		7C73B1DC1355825B6271AE8D /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB65EE76AD7D1B3DBCD24467 /* UIViewController+REFrostedViewController.m */; };
-		7CBAD9DB78978AB73E61C8C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679DB9985F60DEB811E894A /* Foundation.framework */; };
-		80854143E19A049DEB1B5EBE /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EA0062551C1E9549B98F52 /* UIImage+AFNetworking.h */; };
-		812D9B34BBE7203703F04267 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B7FC8E4D68BE3B37940B6B /* UIKit+AFNetworking.h */; };
-		82D10F92A799BBD3F2DD5B38 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A91FDCA0425DB915E70BD396 /* AFHTTPRequestOperationManager.h */; };
-		86C2475286455D0357BC2462 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D675241D1FB1004CB6CC58 /* AFNetworkReachabilityManager.m */; };
-		9609773C99673E8FB66FD970 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D6B2A7D7A10658157916D6 /* AFURLResponseSerialization.m */; };
-		96E6BC2699326225FF7C71C8 /* RNFrostedSidebar.h in Headers */ = {isa = PBXBuildFile; fileRef = A29D86DCC5287FF15BF51ED0 /* RNFrostedSidebar.h */; };
-		97DCE78F7B1EA4EDBE9F4084 /* Pods-Reosuke-REFrostedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE8ED1ED87DBDE19A16DA3F /* Pods-Reosuke-REFrostedViewController-dummy.m */; };
-		9D1B5AF445A01BA0405E22CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB2FBF6E37213165ACE6715 /* QuartzCore.framework */; };
-		A3131D2D829ADCA706BF5018 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7C8B4B0A87026D9FE27CA6 /* AFURLRequestSerialization.m */; };
-		A75106DEB4EC085D0136AA4E /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 590CB262FB20ECC72D694EA4 /* REFrostedViewController.m */; };
-		A7EA70A5EBC379FD3C6DDCB0 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F92E1A36500815070E0CF6D /* AFHTTPSessionManager.m */; };
-		A887F0F932D9C4A572E938B1 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A4EA58D57370A6E65841F1D6 /* UIActivityIndicatorView+AFNetworking.h */; };
-		AA26B999FA17469C4A66F478 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 430919BE6D9627A9AEEA921F /* RNFrostedSidebar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		ADDB8FF275A5BC03157B5BB8 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA193EE3C23313C36CF5966 /* RECommonFunctions.m */; };
-		B19416237CEFFD1E9A0CDBE0 /* Pods-Reosuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F07A4003834662417785EC /* Pods-Reosuke-dummy.m */; };
-		B4310C4C20A643A1EE297498 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F43E82958455226DC0DBD0 /* CoreGraphics.framework */; };
-		B68E4797CC61F0C785EA62FC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFB9F3631280883EDB9F244 /* AFURLSessionManager.m */; };
-		B7CAD79EFC859EBE2D297CC9 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC421E16331D5067E2C6E7A /* RECommonFunctions.m */; };
-		B99CE85F5636BBF061313EE2 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F77AD2C3E999A69020C7AC /* UIProgressView+AFNetworking.m */; };
-		BF0226B7B945B14A5619E823 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6863E95F2AFB20E01DEDCED6 /* AFHTTPRequestOperation.h */; };
-		C0DBFE3883EFAFD6FCA565F1 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7452853E48B6EA56EB022DBA /* UIImageView+AFNetworking.m */; };
-		C388A200F9D34E95F4AB8502 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992360974B2C72FC75F4D102 /* UIImage+REFrostedViewController.m */; };
-		C7386F6C737D02727CC252D6 /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 187BC617FAC80A5B2A7A30C9 /* RECommonFunctions.h */; };
-		C7E75D1B84EA1A9E1F28610D /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDCF376623FED04E4343999 /* REFrostedContainerViewController.m */; };
-		C85FB71A76C16D141FBCCF62 /* Pods-Reosuke-RNFrostedSidebar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7140BCDFDBD0A6AAF01BF /* Pods-Reosuke-RNFrostedSidebar-dummy.m */; };
-		CE1442F76F7434EBC26CBDED /* MSCollectionViewCalendarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFC5D1931680DBB9FF65485 /* MSCollectionViewCalendarLayout.m */; };
-		D355A657DE58EB9903F4B02C /* UIView+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D46BF3F59DCBA1AEDDB18481 /* UIView+REFrostedViewController.h */; };
-		D89886526C7E23C0CCE4AE49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B679DB9985F60DEB811E894A /* Foundation.framework */; };
-		DF85BDEE35CE015B1A9E23D3 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44ECFFEAADD2D5CD7D0373E2 /* AFURLConnectionOperation.m */; };
-		E42F3B71B1A6057E64B6D930 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E43B812B01E3A98CE699629 /* AFHTTPRequestOperation.m */; };
-		EA090F0D6AF14170572CC75C /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 43380FBFD8714A03B1F57DC5 /* UIImageView+AFNetworking.h */; };
-		EE8AE708BBDA2265419942AA /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7426F13CD9FF280F402CE3C2 /* UIRefreshControl+AFNetworking.h */; };
-		F4216F437084C601F0CCD7A4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC00DDA555025321E8A2A75 /* Accelerate.framework */; };
-		F6D9217126461E59B4998515 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8710938B835D9FC6BCEA8D /* Security.framework */; };
-		F784739326923A6A1A0F4469 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8B3EFFE3EB6619451B0B22 /* UIRefreshControl+AFNetworking.m */; };
-		F9257A6F5B71C743AA6E1F95 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D28D3548F40FBACCAA2412DE /* AFURLSessionManager.h */; };
+		07199800B6B77476120A2C4D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C475469C185FE4A967D3CA5 /* MobileCoreServices.framework */; };
+		07E5530479F26FCC876F6F3F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C172C2A83FE5F45C4CD7F8 /* AFURLConnectionOperation.m */; };
+		08D51E4E52D68E4F0E132E4F /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BBFC58980FC5DDD3869DF6 /* UIAlertView+AFNetworking.m */; };
+		0D80B46CF5EC1CB6A88ED345 /* Pods-Reosuke-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4D743DE7B80037FD2E7C7 /* Pods-Reosuke-dummy.m */; };
+		118622CBC51EC99C900B12E9 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD9B347C96AEB64DE880890 /* AFHTTPRequestOperationManager.m */; };
+		191A16A4C0855BD94B446153 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D2905029D8FC2ACEE38713B /* AFHTTPSessionManager.h */; };
+		19E869154C1E036589C3D076 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D2DA0BF6AA34D151014AD2 /* AFURLRequestSerialization.h */; };
+		1B774F8823E006969E63F4FA /* UIViewController+RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BAC1BF16D2C0D31B793B7F /* UIViewController+RESideMenu.h */; };
+		1D132246E55DF00C24D5E133 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49072EDFA6E0CFA285FD7234 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m */; };
+		1F91CB15F36A732913B79B5D /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A52210580AB262C724C5DCE /* REFrostedContainerViewController.m */; };
+		21C53D4537C68DBAC25E0B01 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC8CDC62997E140479FFEDE /* AFURLSessionManager.h */; };
+		246361DE34BF3A113A16CFC8 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 74C7B4A0B465F86802CCFB81 /* UIProgressView+AFNetworking.h */; };
+		24812C4E67125A01DF06399A /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = DE687A6290446290038DFD6F /* UIAlertView+AFNetworking.h */; };
+		2503C81D27F24D2099D897FB /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 94CA12447BD1398DB6D41C8C /* AFNetworkReachabilityManager.h */; };
+		27190859AA919A0D0AEF4FB8 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 84A1E75C720A6CE54A426CFE /* AFSecurityPolicy.h */; };
+		28A74975F626B4DE47069791 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC0A2A861B1E028B78CEAD5 /* UIImageView+AFNetworking.h */; };
+		319A7E14B5065A3AFFD43884 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		34A4FEF6B10D4E821BE08FC0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D795E2771DDA0B0B6BDCC52D /* Security.framework */; };
+		38FAAB5542C7F92027CF5CD5 /* UIImage+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 122F6034450E2EC122256CE0 /* UIImage+REFrostedViewController.h */; };
+		3DFE87C9ADFD926C8E293F0C /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A9BE50789CC3F9B01EECB1 /* SVIndefiniteAnimatedView.m */; };
+		3F934FF600D5510C1CC0DABD /* Pods-Reosuke-REFrostedViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF71AEB98E545624B8DC2E9 /* Pods-Reosuke-REFrostedViewController-dummy.m */; };
+		43A19D3890AEEC64F73B757E /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B72E2648CE3B5B846C77097 /* UIKit+AFNetworking.h */; };
+		44F0DECB838EDA55D724F62B /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 31083524D8644F8DA260F971 /* RESideMenu.m */; };
+		45D463135B33725979704DD1 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B26AC18FD94B1B6C624918 /* AFNetworkActivityIndicatorManager.m */; };
+		491DCB4E4F8BC358EBF1C826 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D9001BF62CE58B812BD05AF4 /* AFURLRequestSerialization.m */; };
+		4994FBEE53507567EFC2E3F9 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C7171EC4D2144273AF8CE8 /* UIRefreshControl+AFNetworking.m */; };
+		4AFFB309FAA3D03C8FA7E67A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6557F1415A708B23DFAE26 /* QuartzCore.framework */; };
+		4DE08E1A0119644DF3BA54CD /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B3A144F6E93ECE811C76E2 /* AFNetworkActivityIndicatorManager.h */; };
+		5097A6788FDF830408538109 /* MSCollectionViewCalendarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB2C2179C7FFC4F6742615 /* MSCollectionViewCalendarLayout.m */; };
+		52E918689F37EC1BF8B4BF11 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153805F6BC61ED665E3EED1C /* Accelerate.framework */; };
+		533029B44EF465583E15A326 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5E8B8BF1E4831AEFAC0556 /* SVProgressHUD.m */; };
+		534CF281D9580E902138098E /* RESideMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = AF72E1BDBBA1D002568245BF /* RESideMenu.h */; };
+		5E2185FF12D234F4B29DD39C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F52DD2D5D672F2818DE0AEFC /* AFHTTPSessionManager.m */; };
+		60D8017893B7854EF8290006 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D80364B429BADA6D5425C04A /* AFHTTPRequestOperation.m */; };
+		628CD7765B7733668F3CDEB6 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB09D0DB4BB8D15258A7B6 /* UIImageView+AFNetworking.m */; };
+		66321DD54330F8531EAF1467 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 96654FF6A301D008C4B53239 /* UIWebView+AFNetworking.h */; };
+		6B619FDCF589C358BEA8B311 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCCE622E742A67C246F75D6 /* UIButton+AFNetworking.m */; };
+		6EAE319FA9A67317272F4D2C /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E58A8C3541414C61FC66B093 /* AFHTTPRequestOperation.h */; };
+		720DEF2D94CBF1FEEF5ED2E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		72225D8A2F1B5A3219D69F27 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A42F453F40BF8A2D8C844B /* UIView+REFrostedViewController.m */; };
+		74BDAF8F5889DC8BA6E4CE5F /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E87C17F74BD03D392FF525E9 /* UIActivityIndicatorView+AFNetworking.m */; };
+		77402AA781CF091EA770A5D4 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A102B63092468F372789F7 /* AFURLConnectionOperation.h */; };
+		77ACC43F5E91ECE9C6599FA2 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D4045049464C6D4BE76045C7 /* UIProgressView+AFNetworking.m */; };
+		785A1F8D083104966434FD8C /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 95950C0ABC7961D5A1CDFE1B /* UIActivityIndicatorView+AFNetworking.h */; };
+		7B0763A7DF18607DB700E257 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C3630A107F6281EB4D2F1D /* SVProgressHUD.h */; };
+		84D326E5EDB211D37932D7C3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153805F6BC61ED665E3EED1C /* Accelerate.framework */; };
+		8821B29553697CF3D97B2CB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		8E13A6EC016DE0FDB5636917 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4AB4226E2FAFA08FA64EDFC /* AFURLSessionManager.m */; };
+		8EB2CCDBF9F5252AE39CD049 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14E7C87B35D7EBC6A36733C /* UIImage+REFrostedViewController.m */; };
+		98F739F7CC14C64618EA4152 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = CECDE58860979CC79133D658 /* RNFrostedSidebar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9A546B3461DEC24CB57213F3 /* REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 694F4D88EF3D6024307E8682 /* REFrostedViewController.h */; };
+		9C9DE57B1CBB298AC37C3F11 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 13AD5C8C2D5A9CC941E66C08 /* UIButton+AFNetworking.h */; };
+		9FB051ABE49CCFB57861BBAD /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 897AE8E92D41467CC57B1035 /* AFHTTPRequestOperationManager.h */; };
+		A226E4B0640C2EA82DC70FF3 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A89326F9F3A93565C61FA9AE /* UIViewController+RESideMenu.m */; };
+		A37FDE2DB4F8988D4A4AAF2C /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D2AF4CBC09DA0BCB0A0895 /* RECommonFunctions.m */; };
+		A7893691E1F0C6F14CCF1F59 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 167B3DFAD1C79B509086A37F /* SVIndefiniteAnimatedView.h */; };
+		AF541B26A51A8C73897683EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		B2D330BF8AC739A1F6856D7C /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FAF4C187660761C2DE1439 /* RECommonFunctions.m */; };
+		B3BF0193307CF101D68982C2 /* UIViewController+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E042D062130EDC772970DF5D /* UIViewController+REFrostedViewController.h */; };
+		B77AEB40F4E62678B46CD21B /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EF25DB2E330F5FF80D072CA6 /* AFURLResponseSerialization.h */; };
+		BBF208D6B88574BE73CA5D23 /* RNFrostedSidebar.h in Headers */ = {isa = PBXBuildFile; fileRef = 742F64AFD22C7D98E7E94C36 /* RNFrostedSidebar.h */; };
+		BF47AF5B165E4F38CF11D3D0 /* UIView+REFrostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 038DAC55FFB5BC1D5DE1ABF1 /* UIView+REFrostedViewController.h */; };
+		C165896048E16428DA4999E1 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF49B0466D59A2F413D70BF /* UIImage+AFNetworking.h */; };
+		C28F744DB48F460B76A17243 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277B7BA024D2E6B0945E84D /* AFURLResponseSerialization.m */; };
+		C5209D96BFEF87F8D285D7DC /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F542CB9B88AD3A61CBA4FF6 /* RECommonFunctions.h */; };
+		C7C4F4889A43542C2E118A99 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A6C7DFDD82BF9FE922532D /* UIRefreshControl+AFNetworking.h */; };
+		CA7E0C033A58A93B173FC9FC /* Pods-Reosuke-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE64E05EA9A97F4781D5582 /* Pods-Reosuke-AFNetworking-dummy.m */; };
+		CA7EE6B11F7B767AA8E147E3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B776748FAD18198F584D01 /* AFSecurityPolicy.m */; };
+		CAE38132597D29FB431893B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		CC1C8981CECED2CBEDBA6096 /* REFrostedContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 415F8BD3D41B12C33F0C27A8 /* REFrostedContainerViewController.h */; };
+		CCC489F0226CB60AE9B5E338 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6557F1415A708B23DFAE26 /* QuartzCore.framework */; };
+		CDFBD1187161D007585E8507 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF7A465AF01D1F463A54D1 /* AFNetworkReachabilityManager.m */; };
+		D4B5F901D02604D1737CAF00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC39C5926C99B3140A2AE1E7 /* SystemConfiguration.framework */; };
+		D55AA3E65375F5876A73BA79 /* Pods-Reosuke-SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 371903D2711D75BCEE7450B0 /* Pods-Reosuke-SVProgressHUD-dummy.m */; };
+		DEE45E8168597A7699E17D02 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114BD8C4ACA39049702E0569 /* REFrostedViewController.m */; };
+		E05B5DFF8F7AA57A99E0CF96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		E164052446469EED6DA4C569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E093A99DD1AA247218A6401B /* CoreGraphics.framework */; };
+		E68328E85DEE02D3C6F0EF84 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6557F1415A708B23DFAE26 /* QuartzCore.framework */; };
+		E77E2214F606633A44FB626C /* RECommonFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0C411B5F1776646E3E812B3 /* RECommonFunctions.h */; };
+		EA5B14F61EB9289131D432A5 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BD5CC98EDCBE7783BF2D8C71 /* AFNetworking.h */; };
+		EC931FD16516311BBC8609DA /* Pods-Reosuke-RESideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B91A9B2D883388BDEF7A470 /* Pods-Reosuke-RESideMenu-dummy.m */; };
+		ECDAC8358E893BF244568567 /* Pods-Reosuke-RNFrostedSidebar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4272648F99A869B0587BCE32 /* Pods-Reosuke-RNFrostedSidebar-dummy.m */; };
+		F24C14F9B1F02BDA2BF991BE /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 798AF8080D78BEBBB13EF664 /* UIViewController+REFrostedViewController.m */; };
+		F295477ED16A75B9CA668C99 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6557F1415A708B23DFAE26 /* QuartzCore.framework */; };
+		F7E5BB44EA534C9366A21628 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7784A36CF6F7341F323713A9 /* UIWebView+AFNetworking.m */; };
+		F89EE10FA7C91691F9690E7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB70E4EE9130426CBE61379 /* Foundation.framework */; };
+		FC7FE4F8997A5EBFE32E455D /* MSCollectionViewCalendarLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 92E1538F33CEA266C39A7708 /* MSCollectionViewCalendarLayout.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B6357F1E5BE4F6E678A3944 /* PBXContainerItemProxy */ = {
+		218F83417B5D530F7FF56187 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9CC59D0C6E7382EE60488402 /* Project object */;
+			containerPortal = 82F68333A2B9C452D5CFF110 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5136E9CF200E96F4BBCEAAF2;
-			remoteInfo = "Pods-Reosuke-MSCollectionViewCalendarLayout";
-		};
-		737BC4A1DC091A2BF9C6F0A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CC59D0C6E7382EE60488402 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB519039CA429E0BB1F31111;
-			remoteInfo = "Pods-Reosuke-RESideMenu";
-		};
-		9C4A4B630DEFC6EDCE621854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CC59D0C6E7382EE60488402 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 21AF6E26516EA2B5E5783360;
-			remoteInfo = "Pods-Reosuke-RNFrostedSidebar";
-		};
-		CFEB0DC949474AFF805922A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9CC59D0C6E7382EE60488402 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF1604A41DDEA1A694A09EDF;
+			remoteGlobalIDString = 441B10F24CABA01B17164561;
 			remoteInfo = "Pods-Reosuke-REFrostedViewController";
 		};
-		F28DA6BF84AB323434B3F39F /* PBXContainerItemProxy */ = {
+		579641444808BDB0C60BBF9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9CC59D0C6E7382EE60488402 /* Project object */;
+			containerPortal = 82F68333A2B9C452D5CFF110 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7C345B9EBBC8F0FE2B7F24C0;
+			remoteGlobalIDString = EFCB40082427AB9906375086;
+			remoteInfo = "Pods-Reosuke-RESideMenu";
+		};
+		A0E3468FB5023E4BE595D6FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F68333A2B9C452D5CFF110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03B2A7FE2A64606073F19A94;
 			remoteInfo = "Pods-Reosuke-AFNetworking";
+		};
+		DB84C8D5FC62D51A1FCAAE52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F68333A2B9C452D5CFF110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE682BD52CA501BD83CECEAD;
+			remoteInfo = "Pods-Reosuke-RNFrostedSidebar";
+		};
+		E8CCD9505982A2AC81F79D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F68333A2B9C452D5CFF110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B5B1B29A942121B9AD13EF6;
+			remoteInfo = "Pods-Reosuke-MSCollectionViewCalendarLayout";
+		};
+		EAB89991412BAA4659AF92AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82F68333A2B9C452D5CFF110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3FB870AB860EA21B3B1A65C;
+			remoteInfo = "Pods-Reosuke-SVProgressHUD";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ADC504F31BD29758CEEF57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		04710B90B62A6EBD2C907C5E /* Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch"; sourceTree = "<group>"; };
-		057B9C56C8CBF043D751E627 /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig"; sourceTree = "<group>"; };
-		0CE7140BCDFDBD0A6AAF01BF /* Pods-Reosuke-RNFrostedSidebar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-RNFrostedSidebar-dummy.m"; sourceTree = "<group>"; };
-		0E242F23726C0A567B8C7B37 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0FB2FBF6E37213165ACE6715 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		138A4388124A80BEB07152E3 /* Pods-Reosuke-REFrostedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-REFrostedViewController-prefix.pch"; sourceTree = "<group>"; };
-		1393C97E5BEA140F11DE25BF /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		14657BFD7A4EB4CA166FE651 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
-		14A9A182B3FC293DCEC3E33B /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m"; sourceTree = "<group>"; };
-		15F43E82958455226DC0DBD0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		175BCA2F190A414E2A809CCA /* Pods-Reosuke-RNFrostedSidebar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-RNFrostedSidebar-prefix.pch"; sourceTree = "<group>"; };
-		187BC617FAC80A5B2A7A30C9 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = REFrostedViewController/RECommonFunctions.h; sourceTree = "<group>"; };
-		1E43B812B01E3A98CE699629 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		275786BAA48F8B5C3C98EE9F /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		28FF4123D31922BFF07C426F /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RNFrostedSidebar-Private.xcconfig"; sourceTree = "<group>"; };
-		31E7F40FE6EA3FA05C5837AF /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		34092A691223D24400B135E4 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+REFrostedViewController.h"; path = "REFrostedViewController/UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
-		363BF5D41ECF713FBFC1D991 /* Pods-Reosuke-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		3C645B5E5BE4ED8FBDBDE85D /* libPods-Reosuke-RESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-RESideMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CC421E16331D5067E2C6E7A /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
-		3E50E3587E5EE70559A971A0 /* Pods-Reosuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke.release.xcconfig"; sourceTree = "<group>"; };
-		430919BE6D9627A9AEEA921F /* RNFrostedSidebar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
-		43380FBFD8714A03B1F57DC5 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		44ECFFEAADD2D5CD7D0373E2 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		490A593D113796AABD094C42 /* Pods-Reosuke-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reosuke-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C086FE9D2925C575AEB435D /* Pods-Reosuke-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reosuke-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F92E1A36500815070E0CF6D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		511B6A7C19B1D36C5B3BD209 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		553A585A5BE720B93671DD27 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
-		56DD7EBF8F5CD679FB983B0D /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
-		5744A6BAF4D73E5FEEFB1978 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
-		590CB262FB20ECC72D694EA4 /* REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedViewController.m; path = REFrostedViewController/REFrostedViewController.m; sourceTree = "<group>"; };
-		5EA193EE3C23313C36CF5966 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = REFrostedViewController/RECommonFunctions.m; sourceTree = "<group>"; };
-		5FFC5D1931680DBB9FF65485 /* MSCollectionViewCalendarLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSCollectionViewCalendarLayout.m; path = MSCollectionViewCalendarLayout/MSCollectionViewCalendarLayout.m; sourceTree = "<group>"; };
-		61C7574A33CA627C8BB2B3DB /* libPods-Reosuke-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E2C6D54BDB41015B18B7F8 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		6863E95F2AFB20E01DEDCED6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		692496B7F7CC4BE614CB8FDE /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
-		69567A538BB97B99128433E0 /* Pods-Reosuke-RESideMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RESideMenu-Private.xcconfig"; sourceTree = "<group>"; };
-		6B8710938B835D9FC6BCEA8D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6BBC565AAFC2FA9FF62727DF /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		72D6B2A7D7A10658157916D6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		7426F13CD9FF280F402CE3C2 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		7452853E48B6EA56EB022DBA /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		74D675241D1FB1004CB6CC58 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		75EA0062551C1E9549B98F52 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		7DAEE736802171C6016EE41D /* MSCollectionViewCalendarLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSCollectionViewCalendarLayout.h; path = MSCollectionViewCalendarLayout/MSCollectionViewCalendarLayout.h; sourceTree = "<group>"; };
-		7FE8ED1ED87DBDE19A16DA3F /* Pods-Reosuke-REFrostedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-REFrostedViewController-dummy.m"; sourceTree = "<group>"; };
-		8253C23B9DBD20D0F807009E /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		8ACE5F5A204C10BC409EF67A /* Pods-Reosuke-MSCollectionViewCalendarLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-MSCollectionViewCalendarLayout.xcconfig"; sourceTree = "<group>"; };
-		8B2EAC931BC5C43D6C5306D6 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		8CFCF2A938B98D1FD62EF930 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		922F655752E027CFE58739A0 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+REFrostedViewController.m"; path = "REFrostedViewController/UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
-		93F77AD2C3E999A69020C7AC /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		96F07A4003834662417785EC /* Pods-Reosuke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-dummy.m"; sourceTree = "<group>"; };
-		992360974B2C72FC75F4D102 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+REFrostedViewController.m"; path = "REFrostedViewController/UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
-		9B09654D0DB058561E92F080 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+REFrostedViewController.h"; path = "REFrostedViewController/UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
-		9BAB81785A863AE0BFF0EAAD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		9F054E163702FC4248BA89A2 /* REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedViewController.h; path = REFrostedViewController/REFrostedViewController.h; sourceTree = "<group>"; };
-		A14CC3D3BD15BE4A45D4F4EF /* Pods-Reosuke-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-AFNetworking.xcconfig"; sourceTree = "<group>"; };
-		A221141AB79D659C76AF8173 /* libPods-Reosuke-REFrostedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-REFrostedViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A29D86DCC5287FF15BF51ED0 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
-		A4EA58D57370A6E65841F1D6 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		A54456383F7AFF22B9D945FD /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedContainerViewController.h; path = REFrostedViewController/REFrostedContainerViewController.h; sourceTree = "<group>"; };
-		A63E28F5467AC029B7DAB472 /* Pods-Reosuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke.debug.xcconfig"; sourceTree = "<group>"; };
-		A91FDCA0425DB915E70BD396 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		AA7C8B4B0A87026D9FE27CA6 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		B12098E7AABDC6B7512AFF09 /* libPods-Reosuke-MSCollectionViewCalendarLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-MSCollectionViewCalendarLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B679DB9985F60DEB811E894A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B7B7FC8E4D68BE3B37940B6B /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		BA8B3EFFE3EB6619451B0B22 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		BBB271405B9F7D446FB1CEEB /* Pods-Reosuke-RNFrostedSidebar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RNFrostedSidebar.xcconfig"; sourceTree = "<group>"; };
-		BC6F7D8E05852A60ACFBF206 /* libPods-Reosuke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCF577CB1823211A6F51F06F /* Pods-Reosuke-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		BCFB9F3631280883EDB9F244 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		BDBEDEC55D03E1BBED1DDE05 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		C0553D8FE2737E3A9A4AA375 /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-REFrostedViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		C153606F33CEDF96AEF4B9CE /* Pods-Reosuke-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reosuke-resources.sh"; sourceTree = "<group>"; };
-		C41BB78126BB325097CBFFC4 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		D1BAEBAE2F6F067476DDEF37 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		D2363C99375DD1D6F4A036C2 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		D28D3548F40FBACCAA2412DE /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		D46BF3F59DCBA1AEDDB18481 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+REFrostedViewController.h"; path = "REFrostedViewController/UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
-		D6AF28E779B24EE1ACA7FE38 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
-		DA53D5623CFC71AACAF857EB /* Pods-Reosuke-RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RESideMenu.xcconfig"; sourceTree = "<group>"; };
-		DAE372DA780F694A339973DF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		DCC00DDA555025321E8A2A75 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		DD6CCA0A9097EA1C21EF91D9 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
-		E1B87215E17D0A22326CD0AB /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
-		E2F339B4C7DEF29E70440F07 /* Pods-Reosuke-REFrostedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-REFrostedViewController.xcconfig"; sourceTree = "<group>"; };
-		E389A8B881D7CF00AB7AE44C /* libPods-Reosuke-RNFrostedSidebar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-RNFrostedSidebar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E86AB08BAAFE5C017D636961 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		EA749CD9A2A4D6A71C4BB6ED /* Pods-Reosuke-RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-RESideMenu-dummy.m"; sourceTree = "<group>"; };
-		EB65EE76AD7D1B3DBCD24467 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+REFrostedViewController.m"; path = "REFrostedViewController/UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
-		F682A66C8314407F9A1EFB42 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		F8BDC4A3585990F0E5E86E36 /* Pods-Reosuke-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-environment.h"; sourceTree = "<group>"; };
-		FEFCE4866F47CDD6EA0F5412 /* Pods-Reosuke-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
-		FF13C37052623DC75B15C1BD /* Pods-Reosuke-RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-RESideMenu-prefix.pch"; sourceTree = "<group>"; };
-		FFDCF376623FED04E4343999 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedContainerViewController.m; path = REFrostedViewController/REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		02A102B63092468F372789F7 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		02B6B5CE59DF6EADEBBEC4BB /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-REFrostedViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		030204779D449755268F5C64 /* Pods-Reosuke-REFrostedViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-REFrostedViewController.xcconfig"; sourceTree = "<group>"; };
+		038DAC55FFB5BC1D5DE1ABF1 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+REFrostedViewController.h"; path = "REFrostedViewController/UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		0A52210580AB262C724C5DCE /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedContainerViewController.m; path = REFrostedViewController/REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		0D4CF2C08DE38D122E75B8A7 /* Pods-Reosuke-SVProgressHUD-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-SVProgressHUD-Private.xcconfig"; sourceTree = "<group>"; };
+		0F1BAFAE01C32D83ADF460E5 /* libPods-Reosuke-MSCollectionViewCalendarLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-MSCollectionViewCalendarLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1031964C3E8C7CC62C4521CA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		114BD8C4ACA39049702E0569 /* REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = REFrostedViewController.m; path = REFrostedViewController/REFrostedViewController.m; sourceTree = "<group>"; };
+		122F6034450E2EC122256CE0 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+REFrostedViewController.h"; path = "REFrostedViewController/UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		124E906373BDC86A9D7724BD /* libPods-Reosuke-RNFrostedSidebar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-RNFrostedSidebar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13AD5C8C2D5A9CC941E66C08 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		153805F6BC61ED665E3EED1C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		167B3DFAD1C79B509086A37F /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		16A9BE50789CC3F9B01EECB1 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		1B91A9B2D883388BDEF7A470 /* Pods-Reosuke-RESideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-RESideMenu-dummy.m"; sourceTree = "<group>"; };
+		1C6770B59FEC2F0C80F2FD2F /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig"; sourceTree = "<group>"; };
+		206A7111EC7C4AAE6B6EE38A /* libPods-Reosuke-REFrostedViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-REFrostedViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B26AC18FD94B1B6C624918 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		22BAC1BF16D2C0D31B793B7F /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RESideMenu.h"; path = "RESideMenu/UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		2AC0A2A861B1E028B78CEAD5 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		2B2F32349E1E02542873BE5A /* Pods-Reosuke-SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-SVProgressHUD.xcconfig"; sourceTree = "<group>"; };
+		2B72E2648CE3B5B846C77097 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		2C5E8B8BF1E4831AEFAC0556 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		2DCCE622E742A67C246F75D6 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		2E09C7EE14ECD425B9124531 /* Pods-Reosuke-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Reosuke-acknowledgements.markdown"; sourceTree = "<group>"; };
+		31083524D8644F8DA260F971 /* RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RESideMenu.m; path = RESideMenu/RESideMenu.m; sourceTree = "<group>"; };
+		371903D2711D75BCEE7450B0 /* Pods-Reosuke-SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		3BFF7A465AF01D1F463A54D1 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3CE64E05EA9A97F4781D5582 /* Pods-Reosuke-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		3FB70E4EE9130426CBE61379 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		415F8BD3D41B12C33F0C27A8 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedContainerViewController.h; path = REFrostedViewController/REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		4272648F99A869B0587BCE32 /* Pods-Reosuke-RNFrostedSidebar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-RNFrostedSidebar-dummy.m"; sourceTree = "<group>"; };
+		49072EDFA6E0CFA285FD7234 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m"; sourceTree = "<group>"; };
+		4C475469C185FE4A967D3CA5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		4F542CB9B88AD3A61CBA4FF6 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = REFrostedViewController/RECommonFunctions.h; sourceTree = "<group>"; };
+		50E91AD95812DD32C1107785 /* Pods-Reosuke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke.release.xcconfig"; sourceTree = "<group>"; };
+		5277B7BA024D2E6B0945E84D /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		56E1C94E6C85D167B3A3EF8E /* Pods-Reosuke-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Reosuke-resources.sh"; sourceTree = "<group>"; };
+		68829835A086F3CF05CD56E8 /* Pods-Reosuke-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-environment.h"; sourceTree = "<group>"; };
+		694F4D88EF3D6024307E8682 /* REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = REFrostedViewController.h; path = REFrostedViewController/REFrostedViewController.h; sourceTree = "<group>"; };
+		6B6557F1415A708B23DFAE26 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		70C7E97386F38A0656F87A81 /* Pods-Reosuke-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		71BB378F97BF1C08C5D6D881 /* Pods-Reosuke-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		71C3630A107F6281EB4D2F1D /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		73A42F453F40BF8A2D8C844B /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+REFrostedViewController.m"; path = "REFrostedViewController/UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		742F64AFD22C7D98E7E94C36 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
+		74C7B4A0B465F86802CCFB81 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		76FE076154200FBCED4EB021 /* libPods-Reosuke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7784A36CF6F7341F323713A9 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		798AF8080D78BEBBB13EF664 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+REFrostedViewController.m"; path = "REFrostedViewController/UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		79D2DA0BF6AA34D151014AD2 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		809F7F80658595FBCDC1D007 /* Pods-Reosuke-SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		81B776748FAD18198F584D01 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		84A1E75C720A6CE54A426CFE /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		895A267EFCCA11C93B66574C /* Pods-Reosuke-RESideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-RESideMenu-prefix.pch"; sourceTree = "<group>"; };
+		897AE8E92D41467CC57B1035 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		8A00617EEDD349A8ED85DDB5 /* Pods-Reosuke-RESideMenu-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RESideMenu-Private.xcconfig"; sourceTree = "<group>"; };
+		8F016042011434F726916DDB /* libPods-Reosuke-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F42E45F4D93CC67DFE9900D /* Pods-Reosuke-RNFrostedSidebar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RNFrostedSidebar.xcconfig"; sourceTree = "<group>"; };
+		919F02EB5AEA215DF31BC176 /* Pods-Reosuke-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Reosuke-acknowledgements.plist"; sourceTree = "<group>"; };
+		92E1538F33CEA266C39A7708 /* MSCollectionViewCalendarLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSCollectionViewCalendarLayout.h; path = MSCollectionViewCalendarLayout/MSCollectionViewCalendarLayout.h; sourceTree = "<group>"; };
+		94CA12447BD1398DB6D41C8C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		95950C0ABC7961D5A1CDFE1B /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		96654FF6A301D008C4B53239 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		9D2905029D8FC2ACEE38713B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		A89326F9F3A93565C61FA9AE /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RESideMenu.m"; path = "RESideMenu/UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		AB70C0EF6FF63DC82E32C8EC /* Pods-Reosuke-REFrostedViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-REFrostedViewController-prefix.pch"; sourceTree = "<group>"; };
+		ADF49B0466D59A2F413D70BF /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		AF72E1BDBBA1D002568245BF /* RESideMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RESideMenu.h; path = RESideMenu/RESideMenu.h; sourceTree = "<group>"; };
+		AFF71AEB98E545624B8DC2E9 /* Pods-Reosuke-REFrostedViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-REFrostedViewController-dummy.m"; sourceTree = "<group>"; };
+		B2BBFC58980FC5DDD3869DF6 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		B2DB2C2179C7FFC4F6742615 /* MSCollectionViewCalendarLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSCollectionViewCalendarLayout.m; path = MSCollectionViewCalendarLayout/MSCollectionViewCalendarLayout.m; sourceTree = "<group>"; };
+		B7FB09D0DB4BB8D15258A7B6 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		BBD9B347C96AEB64DE880890 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BD5CC98EDCBE7783BF2D8C71 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		BEEA188C99D06A88F9DBAF3B /* Pods-Reosuke-RNFrostedSidebar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-RNFrostedSidebar-prefix.pch"; sourceTree = "<group>"; };
+		C111E1BE6E6EC4A54CC8AAA5 /* Pods-Reosuke-MSCollectionViewCalendarLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-MSCollectionViewCalendarLayout.xcconfig"; sourceTree = "<group>"; };
+		C17836163C32E8CFBCEB05DC /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RNFrostedSidebar-Private.xcconfig"; sourceTree = "<group>"; };
+		C4AB4226E2FAFA08FA64EDFC /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		C4D1152D5BA645355F3FCA27 /* Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch"; sourceTree = "<group>"; };
+		C5A4D743DE7B80037FD2E7C7 /* Pods-Reosuke-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Reosuke-dummy.m"; sourceTree = "<group>"; };
+		C7241672CB2A32964C42BEEE /* libPods-Reosuke-SVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-SVProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECDE58860979CC79133D658 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
+		D0C411B5F1776646E3E812B3 /* RECommonFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RECommonFunctions.h; path = RESideMenu/RECommonFunctions.h; sourceTree = "<group>"; };
+		D4045049464C6D4BE76045C7 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		D6C7171EC4D2144273AF8CE8 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		D795E2771DDA0B0B6BDCC52D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D80364B429BADA6D5425C04A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		D9001BF62CE58B812BD05AF4 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DA0450AEFE2EA7DB8C7CF6F0 /* libPods-Reosuke-RESideMenu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Reosuke-RESideMenu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE687A6290446290038DFD6F /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		E042D062130EDC772970DF5D /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+REFrostedViewController.h"; path = "REFrostedViewController/UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		E093A99DD1AA247218A6401B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		E2B3A144F6E93ECE811C76E2 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		E4D2AF4CBC09DA0BCB0A0895 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = REFrostedViewController/RECommonFunctions.m; sourceTree = "<group>"; };
+		E58A8C3541414C61FC66B093 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		E87C17F74BD03D392FF525E9 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		E97FD44E9EA1F94FD2F3297C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		EF25DB2E330F5FF80D072CA6 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		F14E7C87B35D7EBC6A36733C /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+REFrostedViewController.m"; path = "REFrostedViewController/UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		F1A6C7DFDD82BF9FE922532D /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		F280B5C206BFBB3C4DEE1E68 /* Pods-Reosuke-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		F52DD2D5D672F2818DE0AEFC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F5C172C2A83FE5F45C4CD7F8 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F7E8E532353C67D679221A72 /* Pods-Reosuke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke.debug.xcconfig"; sourceTree = "<group>"; };
+		F7FAF4C187660761C2DE1439 /* RECommonFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RECommonFunctions.m; path = RESideMenu/RECommonFunctions.m; sourceTree = "<group>"; };
+		FC39C5926C99B3140A2AE1E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FCC8CDC62997E140479FFEDE /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		FFD1638CA562ECA4B644375F /* Pods-Reosuke-RESideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Reosuke-RESideMenu.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EFBE044478D1C13C77F65DC /* Frameworks */ = {
+		2F553C84088D2E601F9DF487 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C5BF9586AF4A48DD7AA1D4F /* Foundation.framework in Frameworks */,
+				319A7E14B5065A3AFFD43884 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		49A8CAFDB552C04337CC2CA1 /* Frameworks */ = {
+		343527080D08CD00766E9B5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D89886526C7E23C0CCE4AE49 /* Foundation.framework in Frameworks */,
+				E164052446469EED6DA4C569 /* CoreGraphics.framework in Frameworks */,
+				8821B29553697CF3D97B2CB1 /* Foundation.framework in Frameworks */,
+				07199800B6B77476120A2C4D /* MobileCoreServices.framework in Frameworks */,
+				34A4FEF6B10D4E821BE08FC0 /* Security.framework in Frameworks */,
+				D4B5F901D02604D1737CAF00 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CE6526D0124A3C389B10284 /* Frameworks */ = {
+		73F3BC38FEE911B9B613F558 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4216F437084C601F0CCD7A4 /* Accelerate.framework in Frameworks */,
-				66B81519EA9E31D480F94E5A /* Foundation.framework in Frameworks */,
-				9D1B5AF445A01BA0405E22CF /* QuartzCore.framework in Frameworks */,
+				CAE38132597D29FB431893B5 /* Foundation.framework in Frameworks */,
+				E68328E85DEE02D3C6F0EF84 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E291CB6113A335B15D19BF4 /* Frameworks */ = {
+		B208F5D739882CA3D9563F8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06615390D846B84B892DF7D2 /* Accelerate.framework in Frameworks */,
-				7B81B32772F0F7699EF489B4 /* Foundation.framework in Frameworks */,
-				6377ACC756AE669927F5523C /* QuartzCore.framework in Frameworks */,
+				720DEF2D94CBF1FEEF5ED2E7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		509635A7B8F567C6F73F3E37 /* Frameworks */ = {
+		B9E3BD4233476D7A88727B60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4310C4C20A643A1EE297498 /* CoreGraphics.framework in Frameworks */,
-				7CBAD9DB78978AB73E61C8C9 /* Foundation.framework in Frameworks */,
-				40C988BF218D8F42DFFEF77F /* MobileCoreServices.framework in Frameworks */,
-				F6D9217126461E59B4998515 /* Security.framework in Frameworks */,
-				005A10044A6C75CD573A7700 /* SystemConfiguration.framework in Frameworks */,
+				84D326E5EDB211D37932D7C3 /* Accelerate.framework in Frameworks */,
+				F89EE10FA7C91691F9690E7F /* Foundation.framework in Frameworks */,
+				CCC489F0226CB60AE9B5E338 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EEB32FD18CF1C86CC24747C /* Frameworks */ = {
+		C780BDC072C0EE962E9E6DFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B160C37D6F8F73FBDA81F21 /* Foundation.framework in Frameworks */,
-				22E0353394E88B9D05A531FB /* QuartzCore.framework in Frameworks */,
+				AF541B26A51A8C73897683EA /* Foundation.framework in Frameworks */,
+				4AFFB309FAA3D03C8FA7E67A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B59F49CDFC0720769AD94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E918689F37EC1BF8B4BF11 /* Accelerate.framework in Frameworks */,
+				E05B5DFF8F7AA57A99E0CF96 /* Foundation.framework in Frameworks */,
+				F295477ED16A75B9CA668C99 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08F99106528EF3CD72735FAA /* iOS */ = {
+		098B10802C16F32A65EACAD8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DCC00DDA555025321E8A2A75 /* Accelerate.framework */,
-				15F43E82958455226DC0DBD0 /* CoreGraphics.framework */,
-				B679DB9985F60DEB811E894A /* Foundation.framework */,
-				9BAB81785A863AE0BFF0EAAD /* MobileCoreServices.framework */,
-				0FB2FBF6E37213165ACE6715 /* QuartzCore.framework */,
-				6B8710938B835D9FC6BCEA8D /* Security.framework */,
-				00ADC504F31BD29758CEEF57 /* SystemConfiguration.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		18B56F9E4FAB831556645846 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				F682A66C8314407F9A1EFB42 /* AFNetworkActivityIndicatorManager.h */,
-				64E2C6D54BDB41015B18B7F8 /* AFNetworkActivityIndicatorManager.m */,
-				A4EA58D57370A6E65841F1D6 /* UIActivityIndicatorView+AFNetworking.h */,
-				D1BAEBAE2F6F067476DDEF37 /* UIActivityIndicatorView+AFNetworking.m */,
-				5744A6BAF4D73E5FEEFB1978 /* UIAlertView+AFNetworking.h */,
-				DD6CCA0A9097EA1C21EF91D9 /* UIAlertView+AFNetworking.m */,
-				6BBC565AAFC2FA9FF62727DF /* UIButton+AFNetworking.h */,
-				275786BAA48F8B5C3C98EE9F /* UIButton+AFNetworking.m */,
-				75EA0062551C1E9549B98F52 /* UIImage+AFNetworking.h */,
-				43380FBFD8714A03B1F57DC5 /* UIImageView+AFNetworking.h */,
-				7452853E48B6EA56EB022DBA /* UIImageView+AFNetworking.m */,
-				B7B7FC8E4D68BE3B37940B6B /* UIKit+AFNetworking.h */,
-				8253C23B9DBD20D0F807009E /* UIProgressView+AFNetworking.h */,
-				93F77AD2C3E999A69020C7AC /* UIProgressView+AFNetworking.m */,
-				7426F13CD9FF280F402CE3C2 /* UIRefreshControl+AFNetworking.h */,
-				BA8B3EFFE3EB6619451B0B22 /* UIRefreshControl+AFNetworking.m */,
-				8CFCF2A938B98D1FD62EF930 /* UIWebView+AFNetworking.h */,
-				C41BB78126BB325097CBFFC4 /* UIWebView+AFNetworking.m */,
-			);
-			name = UIKit;
-			sourceTree = "<group>";
-		};
-		2C080BB5E983C1EF325C3718 /* RESideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				D6AF28E779B24EE1ACA7FE38 /* RECommonFunctions.h */,
-				3CC421E16331D5067E2C6E7A /* RECommonFunctions.m */,
-				692496B7F7CC4BE614CB8FDE /* RESideMenu.h */,
-				E1B87215E17D0A22326CD0AB /* RESideMenu.m */,
-				553A585A5BE720B93671DD27 /* UIViewController+RESideMenu.h */,
-				56DD7EBF8F5CD679FB983B0D /* UIViewController+RESideMenu.m */,
-				72AA91D1A99F9E4B5B7DCB4A /* Support Files */,
-			);
-			path = RESideMenu;
-			sourceTree = "<group>";
-		};
-		44E44881C351392EB9F19668 /* NSURLConnection */ = {
-			isa = PBXGroup;
-			children = (
-				6863E95F2AFB20E01DEDCED6 /* AFHTTPRequestOperation.h */,
-				1E43B812B01E3A98CE699629 /* AFHTTPRequestOperation.m */,
-				A91FDCA0425DB915E70BD396 /* AFHTTPRequestOperationManager.h */,
-				1393C97E5BEA140F11DE25BF /* AFHTTPRequestOperationManager.m */,
-				D2363C99375DD1D6F4A036C2 /* AFURLConnectionOperation.h */,
-				44ECFFEAADD2D5CD7D0373E2 /* AFURLConnectionOperation.m */,
-			);
-			name = NSURLConnection;
-			sourceTree = "<group>";
-		};
-		511DFA6DD5E1E34F3BA39F6B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BC6F7D8E05852A60ACFBF206 /* libPods-Reosuke.a */,
-				61C7574A33CA627C8BB2B3DB /* libPods-Reosuke-AFNetworking.a */,
-				B12098E7AABDC6B7512AFF09 /* libPods-Reosuke-MSCollectionViewCalendarLayout.a */,
-				A221141AB79D659C76AF8173 /* libPods-Reosuke-REFrostedViewController.a */,
-				3C645B5E5BE4ED8FBDBDE85D /* libPods-Reosuke-RESideMenu.a */,
-				E389A8B881D7CF00AB7AE44C /* libPods-Reosuke-RNFrostedSidebar.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5FD92DB69D1712D215E22AEE /* REFrostedViewController */ = {
-			isa = PBXGroup;
-			children = (
-				187BC617FAC80A5B2A7A30C9 /* RECommonFunctions.h */,
-				5EA193EE3C23313C36CF5966 /* RECommonFunctions.m */,
-				A54456383F7AFF22B9D945FD /* REFrostedContainerViewController.h */,
-				FFDCF376623FED04E4343999 /* REFrostedContainerViewController.m */,
-				9F054E163702FC4248BA89A2 /* REFrostedViewController.h */,
-				590CB262FB20ECC72D694EA4 /* REFrostedViewController.m */,
-				9B09654D0DB058561E92F080 /* UIImage+REFrostedViewController.h */,
-				992360974B2C72FC75F4D102 /* UIImage+REFrostedViewController.m */,
-				D46BF3F59DCBA1AEDDB18481 /* UIView+REFrostedViewController.h */,
-				922F655752E027CFE58739A0 /* UIView+REFrostedViewController.m */,
-				34092A691223D24400B135E4 /* UIViewController+REFrostedViewController.h */,
-				EB65EE76AD7D1B3DBCD24467 /* UIViewController+REFrostedViewController.m */,
-				C96FE82D8CCC05E66FA1DAD2 /* Support Files */,
-			);
-			path = REFrostedViewController;
-			sourceTree = "<group>";
-		};
-		6E42805797B2BB4ED2121404 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				762D4BDF2D9CED8F2AA61300 /* AFNetworking */,
-				95A615D6F2D0513164910DD0 /* MSCollectionViewCalendarLayout */,
-				5FD92DB69D1712D215E22AEE /* REFrostedViewController */,
-				2C080BB5E983C1EF325C3718 /* RESideMenu */,
-				F0AEFE559575342BC46D72F6 /* RNFrostedSidebar */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		72AA91D1A99F9E4B5B7DCB4A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DA53D5623CFC71AACAF857EB /* Pods-Reosuke-RESideMenu.xcconfig */,
-				69567A538BB97B99128433E0 /* Pods-Reosuke-RESideMenu-Private.xcconfig */,
-				EA749CD9A2A4D6A71C4BB6ED /* Pods-Reosuke-RESideMenu-dummy.m */,
-				FF13C37052623DC75B15C1BD /* Pods-Reosuke-RESideMenu-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Reosuke-RESideMenu";
-			sourceTree = "<group>";
-		};
-		762D4BDF2D9CED8F2AA61300 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				31E7F40FE6EA3FA05C5837AF /* AFNetworking.h */,
-				44E44881C351392EB9F19668 /* NSURLConnection */,
-				D2F0BA90E99083B9C5E3454B /* NSURLSession */,
-				ECF7E7BE156F5104A771D891 /* Reachability */,
-				DF4307ACF8C5FC4F238B5C9D /* Security */,
-				81FC373F245C4559757276D8 /* Serialization */,
-				EA30EEFC07A1843CBE7D9FCF /* Support Files */,
-				18B56F9E4FAB831556645846 /* UIKit */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		81FC373F245C4559757276D8 /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				511B6A7C19B1D36C5B3BD209 /* AFURLRequestSerialization.h */,
-				AA7C8B4B0A87026D9FE27CA6 /* AFURLRequestSerialization.m */,
-				E86AB08BAAFE5C017D636961 /* AFURLResponseSerialization.h */,
-				72D6B2A7D7A10658157916D6 /* AFURLResponseSerialization.m */,
-			);
-			name = Serialization;
-			sourceTree = "<group>";
-		};
-		95A615D6F2D0513164910DD0 /* MSCollectionViewCalendarLayout */ = {
-			isa = PBXGroup;
-			children = (
-				7DAEE736802171C6016EE41D /* MSCollectionViewCalendarLayout.h */,
-				5FFC5D1931680DBB9FF65485 /* MSCollectionViewCalendarLayout.m */,
-				F161ED500E9E6D1B8C38DFC6 /* Support Files */,
-			);
-			path = MSCollectionViewCalendarLayout;
-			sourceTree = "<group>";
-		};
-		A0783700CF61E4F03E0B99CE /* Pods-Reosuke */ = {
-			isa = PBXGroup;
-			children = (
-				4C086FE9D2925C575AEB435D /* Pods-Reosuke-acknowledgements.markdown */,
-				490A593D113796AABD094C42 /* Pods-Reosuke-acknowledgements.plist */,
-				96F07A4003834662417785EC /* Pods-Reosuke-dummy.m */,
-				F8BDC4A3585990F0E5E86E36 /* Pods-Reosuke-environment.h */,
-				C153606F33CEDF96AEF4B9CE /* Pods-Reosuke-resources.sh */,
-				A63E28F5467AC029B7DAB472 /* Pods-Reosuke.debug.xcconfig */,
-				3E50E3587E5EE70559A971A0 /* Pods-Reosuke.release.xcconfig */,
-			);
-			name = "Pods-Reosuke";
-			path = "Target Support Files/Pods-Reosuke";
-			sourceTree = "<group>";
-		};
-		AA4C0FD901F303C27901C80C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BBB271405B9F7D446FB1CEEB /* Pods-Reosuke-RNFrostedSidebar.xcconfig */,
-				28FF4123D31922BFF07C426F /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */,
-				0CE7140BCDFDBD0A6AAF01BF /* Pods-Reosuke-RNFrostedSidebar-dummy.m */,
-				175BCA2F190A414E2A809CCA /* Pods-Reosuke-RNFrostedSidebar-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Reosuke-RNFrostedSidebar";
-			sourceTree = "<group>";
-		};
-		ABAF884CD54C2587B5700542 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A0783700CF61E4F03E0B99CE /* Pods-Reosuke */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C96FE82D8CCC05E66FA1DAD2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E2F339B4C7DEF29E70440F07 /* Pods-Reosuke-REFrostedViewController.xcconfig */,
-				C0553D8FE2737E3A9A4AA375 /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */,
-				7FE8ED1ED87DBDE19A16DA3F /* Pods-Reosuke-REFrostedViewController-dummy.m */,
-				138A4388124A80BEB07152E3 /* Pods-Reosuke-REFrostedViewController-prefix.pch */,
+				030204779D449755268F5C64 /* Pods-Reosuke-REFrostedViewController.xcconfig */,
+				02B6B5CE59DF6EADEBBEC4BB /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */,
+				AFF71AEB98E545624B8DC2E9 /* Pods-Reosuke-REFrostedViewController-dummy.m */,
+				AB70C0EF6FF63DC82E32C8EC /* Pods-Reosuke-REFrostedViewController-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Reosuke-REFrostedViewController";
 			sourceTree = "<group>";
 		};
-		D0DDA550C75C5F9ECE052448 /* Frameworks */ = {
+		0D44ACAE5A2DCDBC51A6BD91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08F99106528EF3CD72735FAA /* iOS */,
+				5FF480E964992A4C2A4EBDC9 /* AFNetworking */,
+				EB3D583954AA45388C4EED15 /* MSCollectionViewCalendarLayout */,
+				50AE8AA41234DAA6DC7DCC8E /* REFrostedViewController */,
+				4A9A5E0C91EBA85ACDE2BC2C /* RESideMenu */,
+				42FFC95E0863E9D2448CC68F /* RNFrostedSidebar */,
+				3DC551759F840AF32F4E260E /* SVProgressHUD */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		D2F0BA90E99083B9C5E3454B /* NSURLSession */ = {
+		1CE5B80FF017A00C8FA48FDD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAE372DA780F694A339973DF /* AFHTTPSessionManager.h */,
-				4F92E1A36500815070E0CF6D /* AFHTTPSessionManager.m */,
-				D28D3548F40FBACCAA2412DE /* AFURLSessionManager.h */,
-				BCFB9F3631280883EDB9F244 /* AFURLSessionManager.m */,
-			);
-			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		DF4307ACF8C5FC4F238B5C9D /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				14657BFD7A4EB4CA166FE651 /* AFSecurityPolicy.h */,
-				8B2EAC931BC5C43D6C5306D6 /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
-		EA30EEFC07A1843CBE7D9FCF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A14CC3D3BD15BE4A45D4F4EF /* Pods-Reosuke-AFNetworking.xcconfig */,
-				FEFCE4866F47CDD6EA0F5412 /* Pods-Reosuke-AFNetworking-Private.xcconfig */,
-				BCF577CB1823211A6F51F06F /* Pods-Reosuke-AFNetworking-dummy.m */,
-				363BF5D41ECF713FBFC1D991 /* Pods-Reosuke-AFNetworking-prefix.pch */,
+				F280B5C206BFBB3C4DEE1E68 /* Pods-Reosuke-AFNetworking.xcconfig */,
+				71BB378F97BF1C08C5D6D881 /* Pods-Reosuke-AFNetworking-Private.xcconfig */,
+				3CE64E05EA9A97F4781D5582 /* Pods-Reosuke-AFNetworking-dummy.m */,
+				70C7E97386F38A0656F87A81 /* Pods-Reosuke-AFNetworking-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Reosuke-AFNetworking";
 			sourceTree = "<group>";
 		};
-		ECF7E7BE156F5104A771D891 /* Reachability */ = {
+		20083F4003900D1B1C78A02F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				BDBEDEC55D03E1BBED1DDE05 /* AFNetworkReachabilityManager.h */,
-				74D675241D1FB1004CB6CC58 /* AFNetworkReachabilityManager.m */,
+				E2B3A144F6E93ECE811C76E2 /* AFNetworkActivityIndicatorManager.h */,
+				20B26AC18FD94B1B6C624918 /* AFNetworkActivityIndicatorManager.m */,
+				95950C0ABC7961D5A1CDFE1B /* UIActivityIndicatorView+AFNetworking.h */,
+				E87C17F74BD03D392FF525E9 /* UIActivityIndicatorView+AFNetworking.m */,
+				DE687A6290446290038DFD6F /* UIAlertView+AFNetworking.h */,
+				B2BBFC58980FC5DDD3869DF6 /* UIAlertView+AFNetworking.m */,
+				13AD5C8C2D5A9CC941E66C08 /* UIButton+AFNetworking.h */,
+				2DCCE622E742A67C246F75D6 /* UIButton+AFNetworking.m */,
+				ADF49B0466D59A2F413D70BF /* UIImage+AFNetworking.h */,
+				2AC0A2A861B1E028B78CEAD5 /* UIImageView+AFNetworking.h */,
+				B7FB09D0DB4BB8D15258A7B6 /* UIImageView+AFNetworking.m */,
+				2B72E2648CE3B5B846C77097 /* UIKit+AFNetworking.h */,
+				74C7B4A0B465F86802CCFB81 /* UIProgressView+AFNetworking.h */,
+				D4045049464C6D4BE76045C7 /* UIProgressView+AFNetworking.m */,
+				F1A6C7DFDD82BF9FE922532D /* UIRefreshControl+AFNetworking.h */,
+				D6C7171EC4D2144273AF8CE8 /* UIRefreshControl+AFNetworking.m */,
+				96654FF6A301D008C4B53239 /* UIWebView+AFNetworking.h */,
+				7784A36CF6F7341F323713A9 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		36AB9DA04FD6350D98A4A9F9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				479B80C23C450F83BE8FFB59 /* Pods-Reosuke */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		38E0C4B67A539D6EB19C816C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76FE076154200FBCED4EB021 /* libPods-Reosuke.a */,
+				8F016042011434F726916DDB /* libPods-Reosuke-AFNetworking.a */,
+				0F1BAFAE01C32D83ADF460E5 /* libPods-Reosuke-MSCollectionViewCalendarLayout.a */,
+				206A7111EC7C4AAE6B6EE38A /* libPods-Reosuke-REFrostedViewController.a */,
+				DA0450AEFE2EA7DB8C7CF6F0 /* libPods-Reosuke-RESideMenu.a */,
+				124E906373BDC86A9D7724BD /* libPods-Reosuke-RNFrostedSidebar.a */,
+				C7241672CB2A32964C42BEEE /* libPods-Reosuke-SVProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C42E7358986367FF69A4C8E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				94CA12447BD1398DB6D41C8C /* AFNetworkReachabilityManager.h */,
+				3BFF7A465AF01D1F463A54D1 /* AFNetworkReachabilityManager.m */,
 			);
 			name = Reachability;
 			sourceTree = "<group>";
 		};
-		ED1906AE3E348BEF5535D584 = {
+		3DC551759F840AF32F4E260E /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				0E242F23726C0A567B8C7B37 /* Podfile */,
-				D0DDA550C75C5F9ECE052448 /* Frameworks */,
-				6E42805797B2BB4ED2121404 /* Pods */,
-				511DFA6DD5E1E34F3BA39F6B /* Products */,
-				ABAF884CD54C2587B5700542 /* Targets Support Files */,
+				167B3DFAD1C79B509086A37F /* SVIndefiniteAnimatedView.h */,
+				16A9BE50789CC3F9B01EECB1 /* SVIndefiniteAnimatedView.m */,
+				71C3630A107F6281EB4D2F1D /* SVProgressHUD.h */,
+				2C5E8B8BF1E4831AEFAC0556 /* SVProgressHUD.m */,
+				8DA1967A226EA368ABE79F8A /* Resources */,
+				4AC36023C36C042204EE23AE /* Support Files */,
 			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
-		F0AEFE559575342BC46D72F6 /* RNFrostedSidebar */ = {
+		42FFC95E0863E9D2448CC68F /* RNFrostedSidebar */ = {
 			isa = PBXGroup;
 			children = (
-				A29D86DCC5287FF15BF51ED0 /* RNFrostedSidebar.h */,
-				430919BE6D9627A9AEEA921F /* RNFrostedSidebar.m */,
-				AA4C0FD901F303C27901C80C /* Support Files */,
+				742F64AFD22C7D98E7E94C36 /* RNFrostedSidebar.h */,
+				CECDE58860979CC79133D658 /* RNFrostedSidebar.m */,
+				95302B51ED9E74E442E1FA9E /* Support Files */,
 			);
 			path = RNFrostedSidebar;
 			sourceTree = "<group>";
 		};
-		F161ED500E9E6D1B8C38DFC6 /* Support Files */ = {
+		479B80C23C450F83BE8FFB59 /* Pods-Reosuke */ = {
 			isa = PBXGroup;
 			children = (
-				8ACE5F5A204C10BC409EF67A /* Pods-Reosuke-MSCollectionViewCalendarLayout.xcconfig */,
-				057B9C56C8CBF043D751E627 /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */,
-				14A9A182B3FC293DCEC3E33B /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m */,
-				04710B90B62A6EBD2C907C5E /* Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch */,
+				2E09C7EE14ECD425B9124531 /* Pods-Reosuke-acknowledgements.markdown */,
+				919F02EB5AEA215DF31BC176 /* Pods-Reosuke-acknowledgements.plist */,
+				C5A4D743DE7B80037FD2E7C7 /* Pods-Reosuke-dummy.m */,
+				68829835A086F3CF05CD56E8 /* Pods-Reosuke-environment.h */,
+				56E1C94E6C85D167B3A3EF8E /* Pods-Reosuke-resources.sh */,
+				F7E8E532353C67D679221A72 /* Pods-Reosuke.debug.xcconfig */,
+				50E91AD95812DD32C1107785 /* Pods-Reosuke.release.xcconfig */,
+			);
+			name = "Pods-Reosuke";
+			path = "Target Support Files/Pods-Reosuke";
+			sourceTree = "<group>";
+		};
+		4A9A5E0C91EBA85ACDE2BC2C /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D0C411B5F1776646E3E812B3 /* RECommonFunctions.h */,
+				F7FAF4C187660761C2DE1439 /* RECommonFunctions.m */,
+				AF72E1BDBBA1D002568245BF /* RESideMenu.h */,
+				31083524D8644F8DA260F971 /* RESideMenu.m */,
+				22BAC1BF16D2C0D31B793B7F /* UIViewController+RESideMenu.h */,
+				A89326F9F3A93565C61FA9AE /* UIViewController+RESideMenu.m */,
+				5C4485E31B1D79C6E1E308E6 /* Support Files */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		4AC36023C36C042204EE23AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B2F32349E1E02542873BE5A /* Pods-Reosuke-SVProgressHUD.xcconfig */,
+				0D4CF2C08DE38D122E75B8A7 /* Pods-Reosuke-SVProgressHUD-Private.xcconfig */,
+				371903D2711D75BCEE7450B0 /* Pods-Reosuke-SVProgressHUD-dummy.m */,
+				809F7F80658595FBCDC1D007 /* Pods-Reosuke-SVProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Reosuke-SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		50AE8AA41234DAA6DC7DCC8E /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4F542CB9B88AD3A61CBA4FF6 /* RECommonFunctions.h */,
+				E4D2AF4CBC09DA0BCB0A0895 /* RECommonFunctions.m */,
+				415F8BD3D41B12C33F0C27A8 /* REFrostedContainerViewController.h */,
+				0A52210580AB262C724C5DCE /* REFrostedContainerViewController.m */,
+				694F4D88EF3D6024307E8682 /* REFrostedViewController.h */,
+				114BD8C4ACA39049702E0569 /* REFrostedViewController.m */,
+				122F6034450E2EC122256CE0 /* UIImage+REFrostedViewController.h */,
+				F14E7C87B35D7EBC6A36733C /* UIImage+REFrostedViewController.m */,
+				038DAC55FFB5BC1D5DE1ABF1 /* UIView+REFrostedViewController.h */,
+				73A42F453F40BF8A2D8C844B /* UIView+REFrostedViewController.m */,
+				E042D062130EDC772970DF5D /* UIViewController+REFrostedViewController.h */,
+				798AF8080D78BEBBB13EF664 /* UIViewController+REFrostedViewController.m */,
+				098B10802C16F32A65EACAD8 /* Support Files */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+		54AA80C89059CD3E3CD7F84F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				153805F6BC61ED665E3EED1C /* Accelerate.framework */,
+				E093A99DD1AA247218A6401B /* CoreGraphics.framework */,
+				3FB70E4EE9130426CBE61379 /* Foundation.framework */,
+				4C475469C185FE4A967D3CA5 /* MobileCoreServices.framework */,
+				6B6557F1415A708B23DFAE26 /* QuartzCore.framework */,
+				D795E2771DDA0B0B6BDCC52D /* Security.framework */,
+				FC39C5926C99B3140A2AE1E7 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5C4485E31B1D79C6E1E308E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFD1638CA562ECA4B644375F /* Pods-Reosuke-RESideMenu.xcconfig */,
+				8A00617EEDD349A8ED85DDB5 /* Pods-Reosuke-RESideMenu-Private.xcconfig */,
+				1B91A9B2D883388BDEF7A470 /* Pods-Reosuke-RESideMenu-dummy.m */,
+				895A267EFCCA11C93B66574C /* Pods-Reosuke-RESideMenu-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Reosuke-RESideMenu";
+			sourceTree = "<group>";
+		};
+		5FF480E964992A4C2A4EBDC9 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BD5CC98EDCBE7783BF2D8C71 /* AFNetworking.h */,
+				E441299B9BAC2EF87BA4DE68 /* NSURLConnection */,
+				C3182813E02305CE8A5C2DE4 /* NSURLSession */,
+				3C42E7358986367FF69A4C8E /* Reachability */,
+				E99EB7D0C87D266604CE6EC6 /* Security */,
+				D4BAC0C53D1A236315E233AE /* Serialization */,
+				1CE5B80FF017A00C8FA48FDD /* Support Files */,
+				20083F4003900D1B1C78A02F /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		8DA1967A226EA368ABE79F8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E97FD44E9EA1F94FD2F3297C /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		95302B51ED9E74E442E1FA9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F42E45F4D93CC67DFE9900D /* Pods-Reosuke-RNFrostedSidebar.xcconfig */,
+				C17836163C32E8CFBCEB05DC /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */,
+				4272648F99A869B0587BCE32 /* Pods-Reosuke-RNFrostedSidebar-dummy.m */,
+				BEEA188C99D06A88F9DBAF3B /* Pods-Reosuke-RNFrostedSidebar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Reosuke-RNFrostedSidebar";
+			sourceTree = "<group>";
+		};
+		BDBFBDBBEA5478DA38B2722D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C111E1BE6E6EC4A54CC8AAA5 /* Pods-Reosuke-MSCollectionViewCalendarLayout.xcconfig */,
+				1C6770B59FEC2F0C80F2FD2F /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */,
+				49072EDFA6E0CFA285FD7234 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m */,
+				C4D1152D5BA645355F3FCA27 /* Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Reosuke-MSCollectionViewCalendarLayout";
 			sourceTree = "<group>";
 		};
+		C3182813E02305CE8A5C2DE4 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				9D2905029D8FC2ACEE38713B /* AFHTTPSessionManager.h */,
+				F52DD2D5D672F2818DE0AEFC /* AFHTTPSessionManager.m */,
+				FCC8CDC62997E140479FFEDE /* AFURLSessionManager.h */,
+				C4AB4226E2FAFA08FA64EDFC /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		D213B8228322D2F000B8A0DA = {
+			isa = PBXGroup;
+			children = (
+				1031964C3E8C7CC62C4521CA /* Podfile */,
+				DAC515D666D999267A446989 /* Frameworks */,
+				0D44ACAE5A2DCDBC51A6BD91 /* Pods */,
+				38E0C4B67A539D6EB19C816C /* Products */,
+				36AB9DA04FD6350D98A4A9F9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D4BAC0C53D1A236315E233AE /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				79D2DA0BF6AA34D151014AD2 /* AFURLRequestSerialization.h */,
+				D9001BF62CE58B812BD05AF4 /* AFURLRequestSerialization.m */,
+				EF25DB2E330F5FF80D072CA6 /* AFURLResponseSerialization.h */,
+				5277B7BA024D2E6B0945E84D /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		DAC515D666D999267A446989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54AA80C89059CD3E3CD7F84F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E441299B9BAC2EF87BA4DE68 /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				E58A8C3541414C61FC66B093 /* AFHTTPRequestOperation.h */,
+				D80364B429BADA6D5425C04A /* AFHTTPRequestOperation.m */,
+				897AE8E92D41467CC57B1035 /* AFHTTPRequestOperationManager.h */,
+				BBD9B347C96AEB64DE880890 /* AFHTTPRequestOperationManager.m */,
+				02A102B63092468F372789F7 /* AFURLConnectionOperation.h */,
+				F5C172C2A83FE5F45C4CD7F8 /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		E99EB7D0C87D266604CE6EC6 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				84A1E75C720A6CE54A426CFE /* AFSecurityPolicy.h */,
+				81B776748FAD18198F584D01 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		EB3D583954AA45388C4EED15 /* MSCollectionViewCalendarLayout */ = {
+			isa = PBXGroup;
+			children = (
+				92E1538F33CEA266C39A7708 /* MSCollectionViewCalendarLayout.h */,
+				B2DB2C2179C7FFC4F6742615 /* MSCollectionViewCalendarLayout.m */,
+				BDBFBDBBEA5478DA38B2722D /* Support Files */,
+			);
+			path = MSCollectionViewCalendarLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07D079691E1E5FCDD38001DF /* Headers */ = {
+		0867EEBA5FE77A4F45546CDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF0226B7B945B14A5619E823 /* AFHTTPRequestOperation.h in Headers */,
-				82D10F92A799BBD3F2DD5B38 /* AFHTTPRequestOperationManager.h in Headers */,
-				4A5074884C5DE79780C7361D /* AFHTTPSessionManager.h in Headers */,
-				05A3E136015B2AA456FB0A9B /* AFNetworkActivityIndicatorManager.h in Headers */,
-				3A71DE8C6DEF707BF4CE66CC /* AFNetworkReachabilityManager.h in Headers */,
-				3B3E3F60CFBA96DC2099B659 /* AFNetworking.h in Headers */,
-				47A065BA927FEE821A34CAD0 /* AFSecurityPolicy.h in Headers */,
-				0C45F16030E37E255E911F3B /* AFURLConnectionOperation.h in Headers */,
-				756492534B9F865651293F86 /* AFURLRequestSerialization.h in Headers */,
-				14C6A6FB7B440A5C3AE70DF7 /* AFURLResponseSerialization.h in Headers */,
-				F9257A6F5B71C743AA6E1F95 /* AFURLSessionManager.h in Headers */,
-				A887F0F932D9C4A572E938B1 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
-				4A2BDB8A29C2898797990D84 /* UIAlertView+AFNetworking.h in Headers */,
-				3847515DA1C28483E08A6122 /* UIButton+AFNetworking.h in Headers */,
-				80854143E19A049DEB1B5EBE /* UIImage+AFNetworking.h in Headers */,
-				EA090F0D6AF14170572CC75C /* UIImageView+AFNetworking.h in Headers */,
-				812D9B34BBE7203703F04267 /* UIKit+AFNetworking.h in Headers */,
-				32D4086498A5130DED3B9A9D /* UIProgressView+AFNetworking.h in Headers */,
-				EE8AE708BBDA2265419942AA /* UIRefreshControl+AFNetworking.h in Headers */,
-				458A244DE0D22E1B5E599EB6 /* UIWebView+AFNetworking.h in Headers */,
+				C5209D96BFEF87F8D285D7DC /* RECommonFunctions.h in Headers */,
+				CC1C8981CECED2CBEDBA6096 /* REFrostedContainerViewController.h in Headers */,
+				9A546B3461DEC24CB57213F3 /* REFrostedViewController.h in Headers */,
+				38FAAB5542C7F92027CF5CD5 /* UIImage+REFrostedViewController.h in Headers */,
+				BF47AF5B165E4F38CF11D3D0 /* UIView+REFrostedViewController.h in Headers */,
+				B3BF0193307CF101D68982C2 /* UIViewController+REFrostedViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2701B7BFC1700400E4232981 /* Headers */ = {
+		0F7614C6C2E18C632F389B14 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				742BEFE1E06658D315CBE7B8 /* RECommonFunctions.h in Headers */,
-				76BBEF69227B9360E7677955 /* RESideMenu.h in Headers */,
-				68BEE3EA1D858BE941E3124E /* UIViewController+RESideMenu.h in Headers */,
+				E77E2214F606633A44FB626C /* RECommonFunctions.h in Headers */,
+				534CF281D9580E902138098E /* RESideMenu.h in Headers */,
+				1B774F8823E006969E63F4FA /* UIViewController+RESideMenu.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		273676E89B48637436E34847 /* Headers */ = {
+		8D68357257A46E72C3B02969 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7386F6C737D02727CC252D6 /* RECommonFunctions.h in Headers */,
-				45764628D90A4878A23F2E57 /* REFrostedContainerViewController.h in Headers */,
-				785CA33E2C68CAC01E36BC8C /* REFrostedViewController.h in Headers */,
-				6692C2C9260874BAFF13C5B8 /* UIImage+REFrostedViewController.h in Headers */,
-				D355A657DE58EB9903F4B02C /* UIView+REFrostedViewController.h in Headers */,
-				6F3C8F7BDAD85AAAFC9E6F4F /* UIViewController+REFrostedViewController.h in Headers */,
+				A7893691E1F0C6F14CCF1F59 /* SVIndefiniteAnimatedView.h in Headers */,
+				7B0763A7DF18607DB700E257 /* SVProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9C9688C3CC0FA7EF593A5233 /* Headers */ = {
+		92654912CABD7B73EDB66AFF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8310C501831B405F890DDF /* MSCollectionViewCalendarLayout.h in Headers */,
+				BBF208D6B88574BE73CA5D23 /* RNFrostedSidebar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF59E81C9395ACB881977169 /* Headers */ = {
+		D684BFFDDB856EB07787FBA4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E6BC2699326225FF7C71C8 /* RNFrostedSidebar.h in Headers */,
+				FC7FE4F8997A5EBFE32E455D /* MSCollectionViewCalendarLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5AC23BF3A3FB8E614650DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAE319FA9A67317272F4D2C /* AFHTTPRequestOperation.h in Headers */,
+				9FB051ABE49CCFB57861BBAD /* AFHTTPRequestOperationManager.h in Headers */,
+				191A16A4C0855BD94B446153 /* AFHTTPSessionManager.h in Headers */,
+				4DE08E1A0119644DF3BA54CD /* AFNetworkActivityIndicatorManager.h in Headers */,
+				2503C81D27F24D2099D897FB /* AFNetworkReachabilityManager.h in Headers */,
+				EA5B14F61EB9289131D432A5 /* AFNetworking.h in Headers */,
+				27190859AA919A0D0AEF4FB8 /* AFSecurityPolicy.h in Headers */,
+				77402AA781CF091EA770A5D4 /* AFURLConnectionOperation.h in Headers */,
+				19E869154C1E036589C3D076 /* AFURLRequestSerialization.h in Headers */,
+				B77AEB40F4E62678B46CD21B /* AFURLResponseSerialization.h in Headers */,
+				21C53D4537C68DBAC25E0B01 /* AFURLSessionManager.h in Headers */,
+				785A1F8D083104966434FD8C /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				24812C4E67125A01DF06399A /* UIAlertView+AFNetworking.h in Headers */,
+				9C9DE57B1CBB298AC37C3F11 /* UIButton+AFNetworking.h in Headers */,
+				C165896048E16428DA4999E1 /* UIImage+AFNetworking.h in Headers */,
+				28A74975F626B4DE47069791 /* UIImageView+AFNetworking.h in Headers */,
+				43A19D3890AEEC64F73B757E /* UIKit+AFNetworking.h in Headers */,
+				246361DE34BF3A113A16CFC8 /* UIProgressView+AFNetworking.h in Headers */,
+				C7C4F4889A43542C2E118A99 /* UIRefreshControl+AFNetworking.h in Headers */,
+				66321DD54330F8531EAF1467 /* UIWebView+AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		21AF6E26516EA2B5E5783360 /* Pods-Reosuke-RNFrostedSidebar */ = {
+		03B2A7FE2A64606073F19A94 /* Pods-Reosuke-AFNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C31F2E1F98F151344331781D /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RNFrostedSidebar" */;
+			buildConfigurationList = 578AC532C1943AAD051FC4E9 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-AFNetworking" */;
 			buildPhases = (
-				522A054B37457BC07D8D9C8C /* Sources */,
-				4CE6526D0124A3C389B10284 /* Frameworks */,
-				AF59E81C9395ACB881977169 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Reosuke-RNFrostedSidebar";
-			productName = "Pods-Reosuke-RNFrostedSidebar";
-			productReference = E389A8B881D7CF00AB7AE44C /* libPods-Reosuke-RNFrostedSidebar.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		5136E9CF200E96F4BBCEAAF2 /* Pods-Reosuke-MSCollectionViewCalendarLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F0593BE2574DADA15A9BA550 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-MSCollectionViewCalendarLayout" */;
-			buildPhases = (
-				303057EE5BA1FC424B4AAB56 /* Sources */,
-				3EFBE044478D1C13C77F65DC /* Frameworks */,
-				9C9688C3CC0FA7EF593A5233 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Reosuke-MSCollectionViewCalendarLayout";
-			productName = "Pods-Reosuke-MSCollectionViewCalendarLayout";
-			productReference = B12098E7AABDC6B7512AFF09 /* libPods-Reosuke-MSCollectionViewCalendarLayout.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7C345B9EBBC8F0FE2B7F24C0 /* Pods-Reosuke-AFNetworking */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 948812B8259CC2F3562B80BE /* Build configuration list for PBXNativeTarget "Pods-Reosuke-AFNetworking" */;
-			buildPhases = (
-				041E7EB641DD2F4C19A4EBC0 /* Sources */,
-				509635A7B8F567C6F73F3E37 /* Frameworks */,
-				07D079691E1E5FCDD38001DF /* Headers */,
+				5CA70DB9388D63C41C271145 /* Sources */,
+				343527080D08CD00766E9B5C /* Frameworks */,
+				ED5AC23BF3A3FB8E614650DD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -699,54 +742,38 @@
 			);
 			name = "Pods-Reosuke-AFNetworking";
 			productName = "Pods-Reosuke-AFNetworking";
-			productReference = 61C7574A33CA627C8BB2B3DB /* libPods-Reosuke-AFNetworking.a */;
+			productReference = 8F016042011434F726916DDB /* libPods-Reosuke-AFNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8D6483EF71D593B34F1B74BF /* Pods-Reosuke */ = {
+		08F9C72FA94ADB685635FD63 /* Pods-Reosuke */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E434846875620E52E894CFB /* Build configuration list for PBXNativeTarget "Pods-Reosuke" */;
+			buildConfigurationList = 6BDAB85F6D3C3F84C5FB158F /* Build configuration list for PBXNativeTarget "Pods-Reosuke" */;
 			buildPhases = (
-				6FA6E0D58E4A7D8D58DA10B5 /* Sources */,
-				49A8CAFDB552C04337CC2CA1 /* Frameworks */,
+				1C5EE838D8BA2C5D567F4F5F /* Sources */,
+				B208F5D739882CA3D9563F8E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3DBF65E26E45FA56BC19375A /* PBXTargetDependency */,
-				81631E82D11EC937ECC823E1 /* PBXTargetDependency */,
-				3C203E62550ACFFAB94320F3 /* PBXTargetDependency */,
-				BBBF34EBB9F99FE4CF3E12D2 /* PBXTargetDependency */,
-				527DAC739D3992A6D3DB83FE /* PBXTargetDependency */,
+				34280B7462BBB8E8CAB61529 /* PBXTargetDependency */,
+				1AE4332030129F4ABDA896DB /* PBXTargetDependency */,
+				330054B706DA65C1F5F42959 /* PBXTargetDependency */,
+				744DFA0777853AFDB1662DC1 /* PBXTargetDependency */,
+				B2D58008101CB4CDB5FE31D3 /* PBXTargetDependency */,
+				1230373B4E6297BCCFD04D8B /* PBXTargetDependency */,
 			);
 			name = "Pods-Reosuke";
 			productName = "Pods-Reosuke";
-			productReference = BC6F7D8E05852A60ACFBF206 /* libPods-Reosuke.a */;
+			productReference = 76FE076154200FBCED4EB021 /* libPods-Reosuke.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		EB519039CA429E0BB1F31111 /* Pods-Reosuke-RESideMenu */ = {
+		441B10F24CABA01B17164561 /* Pods-Reosuke-REFrostedViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 778F6FF1AAE5256F423B81FD /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RESideMenu" */;
+			buildConfigurationList = EF8A70B6267A599CC6A4D241 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-REFrostedViewController" */;
 			buildPhases = (
-				8C9AD5EB4FA546F1B19DA509 /* Sources */,
-				5EEB32FD18CF1C86CC24747C /* Frameworks */,
-				2701B7BFC1700400E4232981 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Reosuke-RESideMenu";
-			productName = "Pods-Reosuke-RESideMenu";
-			productReference = 3C645B5E5BE4ED8FBDBDE85D /* libPods-Reosuke-RESideMenu.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		EF1604A41DDEA1A694A09EDF /* Pods-Reosuke-REFrostedViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24AB28CD649E1111B2291398 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-REFrostedViewController" */;
-			buildPhases = (
-				D11CE2E6DAC05FFDE549D099 /* Sources */,
-				4E291CB6113A335B15D19BF4 /* Frameworks */,
-				273676E89B48637436E34847 /* Headers */,
+				B0F79FB7ED3B2FCCE3BE0C11 /* Sources */,
+				D14B59F49CDFC0720769AD94 /* Frameworks */,
+				0867EEBA5FE77A4F45546CDA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -754,155 +781,352 @@
 			);
 			name = "Pods-Reosuke-REFrostedViewController";
 			productName = "Pods-Reosuke-REFrostedViewController";
-			productReference = A221141AB79D659C76AF8173 /* libPods-Reosuke-REFrostedViewController.a */;
+			productReference = 206A7111EC7C4AAE6B6EE38A /* libPods-Reosuke-REFrostedViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5B5B1B29A942121B9AD13EF6 /* Pods-Reosuke-MSCollectionViewCalendarLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE60080AF591A2A46DD74766 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-MSCollectionViewCalendarLayout" */;
+			buildPhases = (
+				696E05B27C8C0BBEB8CBB881 /* Sources */,
+				2F553C84088D2E601F9DF487 /* Frameworks */,
+				D684BFFDDB856EB07787FBA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reosuke-MSCollectionViewCalendarLayout";
+			productName = "Pods-Reosuke-MSCollectionViewCalendarLayout";
+			productReference = 0F1BAFAE01C32D83ADF460E5 /* libPods-Reosuke-MSCollectionViewCalendarLayout.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E3FB870AB860EA21B3B1A65C /* Pods-Reosuke-SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52503B6D0366A42FDC04E956 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-SVProgressHUD" */;
+			buildPhases = (
+				9CBE02889EFA994EA556622C /* Sources */,
+				C780BDC072C0EE962E9E6DFA /* Frameworks */,
+				8D68357257A46E72C3B02969 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reosuke-SVProgressHUD";
+			productName = "Pods-Reosuke-SVProgressHUD";
+			productReference = C7241672CB2A32964C42BEEE /* libPods-Reosuke-SVProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EFCB40082427AB9906375086 /* Pods-Reosuke-RESideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7F00EB9CB2F3640B57C2A9A /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RESideMenu" */;
+			buildPhases = (
+				289C9B43B141069235465778 /* Sources */,
+				73F3BC38FEE911B9B613F558 /* Frameworks */,
+				0F7614C6C2E18C632F389B14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reosuke-RESideMenu";
+			productName = "Pods-Reosuke-RESideMenu";
+			productReference = DA0450AEFE2EA7DB8C7CF6F0 /* libPods-Reosuke-RESideMenu.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FE682BD52CA501BD83CECEAD /* Pods-Reosuke-RNFrostedSidebar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012025D97B5766911006BE53 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RNFrostedSidebar" */;
+			buildPhases = (
+				C11E951A6923892F77CFA2A4 /* Sources */,
+				B9E3BD4233476D7A88727B60 /* Frameworks */,
+				92654912CABD7B73EDB66AFF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Reosuke-RNFrostedSidebar";
+			productName = "Pods-Reosuke-RNFrostedSidebar";
+			productReference = 124E906373BDC86A9D7724BD /* libPods-Reosuke-RNFrostedSidebar.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9CC59D0C6E7382EE60488402 /* Project object */ = {
+		82F68333A2B9C452D5CFF110 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 37F82A31704816610AB2AA91 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = FB3941103B76758770297165 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = ED1906AE3E348BEF5535D584;
-			productRefGroup = 511DFA6DD5E1E34F3BA39F6B /* Products */;
+			mainGroup = D213B8228322D2F000B8A0DA;
+			productRefGroup = 38E0C4B67A539D6EB19C816C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D6483EF71D593B34F1B74BF /* Pods-Reosuke */,
-				7C345B9EBBC8F0FE2B7F24C0 /* Pods-Reosuke-AFNetworking */,
-				5136E9CF200E96F4BBCEAAF2 /* Pods-Reosuke-MSCollectionViewCalendarLayout */,
-				EF1604A41DDEA1A694A09EDF /* Pods-Reosuke-REFrostedViewController */,
-				EB519039CA429E0BB1F31111 /* Pods-Reosuke-RESideMenu */,
-				21AF6E26516EA2B5E5783360 /* Pods-Reosuke-RNFrostedSidebar */,
+				08F9C72FA94ADB685635FD63 /* Pods-Reosuke */,
+				03B2A7FE2A64606073F19A94 /* Pods-Reosuke-AFNetworking */,
+				5B5B1B29A942121B9AD13EF6 /* Pods-Reosuke-MSCollectionViewCalendarLayout */,
+				441B10F24CABA01B17164561 /* Pods-Reosuke-REFrostedViewController */,
+				EFCB40082427AB9906375086 /* Pods-Reosuke-RESideMenu */,
+				FE682BD52CA501BD83CECEAD /* Pods-Reosuke-RNFrostedSidebar */,
+				E3FB870AB860EA21B3B1A65C /* Pods-Reosuke-SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		041E7EB641DD2F4C19A4EBC0 /* Sources */ = {
+		1C5EE838D8BA2C5D567F4F5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E42F3B71B1A6057E64B6D930 /* AFHTTPRequestOperation.m in Sources */,
-				741EACE4D25554946CD40396 /* AFHTTPRequestOperationManager.m in Sources */,
-				A7EA70A5EBC379FD3C6DDCB0 /* AFHTTPSessionManager.m in Sources */,
-				1FAB935ACF9AC8123226A5F6 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				86C2475286455D0357BC2462 /* AFNetworkReachabilityManager.m in Sources */,
-				06B8F1C092DA917F7C10C4CC /* AFSecurityPolicy.m in Sources */,
-				DF85BDEE35CE015B1A9E23D3 /* AFURLConnectionOperation.m in Sources */,
-				A3131D2D829ADCA706BF5018 /* AFURLRequestSerialization.m in Sources */,
-				9609773C99673E8FB66FD970 /* AFURLResponseSerialization.m in Sources */,
-				B68E4797CC61F0C785EA62FC /* AFURLSessionManager.m in Sources */,
-				57CE1F76A1CEB7227EC893A7 /* Pods-Reosuke-AFNetworking-dummy.m in Sources */,
-				7349C1B5B60818BC9B2393F4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				570BC5FC3AD0693EFEF6ED52 /* UIAlertView+AFNetworking.m in Sources */,
-				21A44D404FC801E2E3C9829F /* UIButton+AFNetworking.m in Sources */,
-				C0DBFE3883EFAFD6FCA565F1 /* UIImageView+AFNetworking.m in Sources */,
-				B99CE85F5636BBF061313EE2 /* UIProgressView+AFNetworking.m in Sources */,
-				F784739326923A6A1A0F4469 /* UIRefreshControl+AFNetworking.m in Sources */,
-				447815B9E7048CAA8C56D659 /* UIWebView+AFNetworking.m in Sources */,
+				0D80B46CF5EC1CB6A88ED345 /* Pods-Reosuke-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		303057EE5BA1FC424B4AAB56 /* Sources */ = {
+		289C9B43B141069235465778 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1442F76F7434EBC26CBDED /* MSCollectionViewCalendarLayout.m in Sources */,
-				66A7320D2CD05B2D18380F54 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m in Sources */,
+				EC931FD16516311BBC8609DA /* Pods-Reosuke-RESideMenu-dummy.m in Sources */,
+				B2D330BF8AC739A1F6856D7C /* RECommonFunctions.m in Sources */,
+				44F0DECB838EDA55D724F62B /* RESideMenu.m in Sources */,
+				A226E4B0640C2EA82DC70FF3 /* UIViewController+RESideMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		522A054B37457BC07D8D9C8C /* Sources */ = {
+		5CA70DB9388D63C41C271145 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C85FB71A76C16D141FBCCF62 /* Pods-Reosuke-RNFrostedSidebar-dummy.m in Sources */,
-				AA26B999FA17469C4A66F478 /* RNFrostedSidebar.m in Sources */,
+				60D8017893B7854EF8290006 /* AFHTTPRequestOperation.m in Sources */,
+				118622CBC51EC99C900B12E9 /* AFHTTPRequestOperationManager.m in Sources */,
+				5E2185FF12D234F4B29DD39C /* AFHTTPSessionManager.m in Sources */,
+				45D463135B33725979704DD1 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				CDFBD1187161D007585E8507 /* AFNetworkReachabilityManager.m in Sources */,
+				CA7EE6B11F7B767AA8E147E3 /* AFSecurityPolicy.m in Sources */,
+				07E5530479F26FCC876F6F3F /* AFURLConnectionOperation.m in Sources */,
+				491DCB4E4F8BC358EBF1C826 /* AFURLRequestSerialization.m in Sources */,
+				C28F744DB48F460B76A17243 /* AFURLResponseSerialization.m in Sources */,
+				8E13A6EC016DE0FDB5636917 /* AFURLSessionManager.m in Sources */,
+				CA7E0C033A58A93B173FC9FC /* Pods-Reosuke-AFNetworking-dummy.m in Sources */,
+				74BDAF8F5889DC8BA6E4CE5F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				08D51E4E52D68E4F0E132E4F /* UIAlertView+AFNetworking.m in Sources */,
+				6B619FDCF589C358BEA8B311 /* UIButton+AFNetworking.m in Sources */,
+				628CD7765B7733668F3CDEB6 /* UIImageView+AFNetworking.m in Sources */,
+				77ACC43F5E91ECE9C6599FA2 /* UIProgressView+AFNetworking.m in Sources */,
+				4994FBEE53507567EFC2E3F9 /* UIRefreshControl+AFNetworking.m in Sources */,
+				F7E5BB44EA534C9366A21628 /* UIWebView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FA6E0D58E4A7D8D58DA10B5 /* Sources */ = {
+		696E05B27C8C0BBEB8CBB881 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B19416237CEFFD1E9A0CDBE0 /* Pods-Reosuke-dummy.m in Sources */,
+				5097A6788FDF830408538109 /* MSCollectionViewCalendarLayout.m in Sources */,
+				1D132246E55DF00C24D5E133 /* Pods-Reosuke-MSCollectionViewCalendarLayout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C9AD5EB4FA546F1B19DA509 /* Sources */ = {
+		9CBE02889EFA994EA556622C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73999CB9A1E7A4717626DA03 /* Pods-Reosuke-RESideMenu-dummy.m in Sources */,
-				B7CAD79EFC859EBE2D297CC9 /* RECommonFunctions.m in Sources */,
-				5D0817FD3629C672BBFB99BE /* RESideMenu.m in Sources */,
-				12F64060B820F3597C3D428D /* UIViewController+RESideMenu.m in Sources */,
+				D55AA3E65375F5876A73BA79 /* Pods-Reosuke-SVProgressHUD-dummy.m in Sources */,
+				3DFE87C9ADFD926C8E293F0C /* SVIndefiniteAnimatedView.m in Sources */,
+				533029B44EF465583E15A326 /* SVProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D11CE2E6DAC05FFDE549D099 /* Sources */ = {
+		B0F79FB7ED3B2FCCE3BE0C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DCE78F7B1EA4EDBE9F4084 /* Pods-Reosuke-REFrostedViewController-dummy.m in Sources */,
-				ADDB8FF275A5BC03157B5BB8 /* RECommonFunctions.m in Sources */,
-				C7E75D1B84EA1A9E1F28610D /* REFrostedContainerViewController.m in Sources */,
-				A75106DEB4EC085D0136AA4E /* REFrostedViewController.m in Sources */,
-				C388A200F9D34E95F4AB8502 /* UIImage+REFrostedViewController.m in Sources */,
-				70169F85D9A8E5C3CF0741BE /* UIView+REFrostedViewController.m in Sources */,
-				7C73B1DC1355825B6271AE8D /* UIViewController+REFrostedViewController.m in Sources */,
+				3F934FF600D5510C1CC0DABD /* Pods-Reosuke-REFrostedViewController-dummy.m in Sources */,
+				A37FDE2DB4F8988D4A4AAF2C /* RECommonFunctions.m in Sources */,
+				1F91CB15F36A732913B79B5D /* REFrostedContainerViewController.m in Sources */,
+				DEE45E8168597A7699E17D02 /* REFrostedViewController.m in Sources */,
+				8EB2CCDBF9F5252AE39CD049 /* UIImage+REFrostedViewController.m in Sources */,
+				72225D8A2F1B5A3219D69F27 /* UIView+REFrostedViewController.m in Sources */,
+				F24C14F9B1F02BDA2BF991BE /* UIViewController+REFrostedViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C11E951A6923892F77CFA2A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDAC8358E893BF244568567 /* Pods-Reosuke-RNFrostedSidebar-dummy.m in Sources */,
+				98F739F7CC14C64618EA4152 /* RNFrostedSidebar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C203E62550ACFFAB94320F3 /* PBXTargetDependency */ = {
+		1230373B4E6297BCCFD04D8B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Reosuke-REFrostedViewController";
-			target = EF1604A41DDEA1A694A09EDF /* Pods-Reosuke-REFrostedViewController */;
-			targetProxy = CFEB0DC949474AFF805922A6 /* PBXContainerItemProxy */;
+			name = "Pods-Reosuke-SVProgressHUD";
+			target = E3FB870AB860EA21B3B1A65C /* Pods-Reosuke-SVProgressHUD */;
+			targetProxy = EAB89991412BAA4659AF92AB /* PBXContainerItemProxy */;
 		};
-		3DBF65E26E45FA56BC19375A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Reosuke-AFNetworking";
-			target = 7C345B9EBBC8F0FE2B7F24C0 /* Pods-Reosuke-AFNetworking */;
-			targetProxy = F28DA6BF84AB323434B3F39F /* PBXContainerItemProxy */;
-		};
-		527DAC739D3992A6D3DB83FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Reosuke-RNFrostedSidebar";
-			target = 21AF6E26516EA2B5E5783360 /* Pods-Reosuke-RNFrostedSidebar */;
-			targetProxy = 9C4A4B630DEFC6EDCE621854 /* PBXContainerItemProxy */;
-		};
-		81631E82D11EC937ECC823E1 /* PBXTargetDependency */ = {
+		1AE4332030129F4ABDA896DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Reosuke-MSCollectionViewCalendarLayout";
-			target = 5136E9CF200E96F4BBCEAAF2 /* Pods-Reosuke-MSCollectionViewCalendarLayout */;
-			targetProxy = 1B6357F1E5BE4F6E678A3944 /* PBXContainerItemProxy */;
+			target = 5B5B1B29A942121B9AD13EF6 /* Pods-Reosuke-MSCollectionViewCalendarLayout */;
+			targetProxy = E8CCD9505982A2AC81F79D57 /* PBXContainerItemProxy */;
 		};
-		BBBF34EBB9F99FE4CF3E12D2 /* PBXTargetDependency */ = {
+		330054B706DA65C1F5F42959 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Reosuke-REFrostedViewController";
+			target = 441B10F24CABA01B17164561 /* Pods-Reosuke-REFrostedViewController */;
+			targetProxy = 218F83417B5D530F7FF56187 /* PBXContainerItemProxy */;
+		};
+		34280B7462BBB8E8CAB61529 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Reosuke-AFNetworking";
+			target = 03B2A7FE2A64606073F19A94 /* Pods-Reosuke-AFNetworking */;
+			targetProxy = A0E3468FB5023E4BE595D6FE /* PBXContainerItemProxy */;
+		};
+		744DFA0777853AFDB1662DC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Reosuke-RESideMenu";
-			target = EB519039CA429E0BB1F31111 /* Pods-Reosuke-RESideMenu */;
-			targetProxy = 737BC4A1DC091A2BF9C6F0A9 /* PBXContainerItemProxy */;
+			target = EFCB40082427AB9906375086 /* Pods-Reosuke-RESideMenu */;
+			targetProxy = 579641444808BDB0C60BBF9A /* PBXContainerItemProxy */;
+		};
+		B2D58008101CB4CDB5FE31D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Reosuke-RNFrostedSidebar";
+			target = FE682BD52CA501BD83CECEAD /* Pods-Reosuke-RNFrostedSidebar */;
+			targetProxy = DB84C8D5FC62D51A1FCAAE52 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		29816E09E786E0060C4A8D7A /* Release */ = {
+		19BCC86887B22D34B80E332B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28FF4123D31922BFF07C426F /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */;
+			baseConfigurationReference = 1C6770B59FEC2F0C80F2FD2F /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-MSCollectionViewCalendarLayout/Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1B73CBF5C5893CC9EA773756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B6B5CE59DF6EADEBBEC4BB /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-REFrostedViewController/Pods-Reosuke-REFrostedViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DDB132A7DE40C12E23A359D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E8E532353C67D679221A72 /* Pods-Reosuke.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		327191966757178240E0B0D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4CF2C08DE38D122E75B8A7 /* Pods-Reosuke-SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-SVProgressHUD/Pods-Reosuke-SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		48FB0DABA7AC950AD8A5BDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50E91AD95812DD32C1107785 /* Pods-Reosuke.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		67D085921DD744D41CA15CB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BB378F97BF1C08C5D6D881 /* Pods-Reosuke-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-AFNetworking/Pods-Reosuke-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7156AAE0E6FF57E69F6378AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B6B5CE59DF6EADEBBEC4BB /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-REFrostedViewController/Pods-Reosuke-REFrostedViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		807943D05B2D747588F10D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17836163C32E8CFBCEB05DC /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RNFrostedSidebar/Pods-Reosuke-RNFrostedSidebar-prefix.pch";
@@ -916,7 +1140,137 @@
 			};
 			name = Release;
 		};
-		2C44EC168BEB418ABD2D319A /* Debug */ = {
+		89382128CA34A6627448BC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D4CF2C08DE38D122E75B8A7 /* Pods-Reosuke-SVProgressHUD-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-SVProgressHUD/Pods-Reosuke-SVProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA523A67C3EBC52F6EC485FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A00617EEDD349A8ED85DDB5 /* Pods-Reosuke-RESideMenu-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RESideMenu/Pods-Reosuke-RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C05E697CF27501148A0BB415 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BB378F97BF1C08C5D6D881 /* Pods-Reosuke-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-AFNetworking/Pods-Reosuke-AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CBA5D37B4EC35A856563412A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C6770B59FEC2F0C80F2FD2F /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-MSCollectionViewCalendarLayout/Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D876D8AE6B6439DD34FA1029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF3A6ACA3D8B6DA79B040BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17836163C32E8CFBCEB05DC /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RNFrostedSidebar/Pods-Reosuke-RNFrostedSidebar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E7695CB075500E1757421921 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A00617EEDD349A8ED85DDB5 /* Pods-Reosuke-RESideMenu-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RESideMenu/Pods-Reosuke-RESideMenu-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FC5BDB001F739783E0A85C49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -955,283 +1309,82 @@
 			};
 			name = Debug;
 		};
-		5194371B73F9E7A57DA396AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69567A538BB97B99128433E0 /* Pods-Reosuke-RESideMenu-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RESideMenu/Pods-Reosuke-RESideMenu-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5A00B6F40603A52139F4F7E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 057B9C56C8CBF043D751E627 /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-MSCollectionViewCalendarLayout/Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		70F5B23E954302D2B334A8DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0553D8FE2737E3A9A4AA375 /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-REFrostedViewController/Pods-Reosuke-REFrostedViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7C2E11E4DB1743652228B119 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E50E3587E5EE70559A971A0 /* Pods-Reosuke.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8172CC87905406E4A4DC8D14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0553D8FE2737E3A9A4AA375 /* Pods-Reosuke-REFrostedViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-REFrostedViewController/Pods-Reosuke-REFrostedViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		93E4F577EFEC30602A5DC066 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEFCE4866F47CDD6EA0F5412 /* Pods-Reosuke-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-AFNetworking/Pods-Reosuke-AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A850E88D179A282B11040CDD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 057B9C56C8CBF043D751E627 /* Pods-Reosuke-MSCollectionViewCalendarLayout-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-MSCollectionViewCalendarLayout/Pods-Reosuke-MSCollectionViewCalendarLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		B05F290DDD76219CECA31CD0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEFCE4866F47CDD6EA0F5412 /* Pods-Reosuke-AFNetworking-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-AFNetworking/Pods-Reosuke-AFNetworking-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C536281E4320981F46B504F7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28FF4123D31922BFF07C426F /* Pods-Reosuke-RNFrostedSidebar-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RNFrostedSidebar/Pods-Reosuke-RNFrostedSidebar-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DB4FE0F56F1EC3AC5B0FE6A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69567A538BB97B99128433E0 /* Pods-Reosuke-RESideMenu-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Reosuke-RESideMenu/Pods-Reosuke-RESideMenu-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E2DC250C34AD3F9127753BDD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A63E28F5467AC029B7DAB472 /* Pods-Reosuke.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E89BFC6A39D74939A9A59C54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24AB28CD649E1111B2291398 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-REFrostedViewController" */ = {
+		012025D97B5766911006BE53 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RNFrostedSidebar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8172CC87905406E4A4DC8D14 /* Debug */,
-				70F5B23E954302D2B334A8DF /* Release */,
+				DF3A6ACA3D8B6DA79B040BEA /* Debug */,
+				807943D05B2D747588F10D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37F82A31704816610AB2AA91 /* Build configuration list for PBXProject "Pods" */ = {
+		52503B6D0366A42FDC04E956 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C44EC168BEB418ABD2D319A /* Debug */,
-				E89BFC6A39D74939A9A59C54 /* Release */,
+				327191966757178240E0B0D0 /* Debug */,
+				89382128CA34A6627448BC77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		778F6FF1AAE5256F423B81FD /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RESideMenu" */ = {
+		578AC532C1943AAD051FC4E9 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5194371B73F9E7A57DA396AE /* Debug */,
-				DB4FE0F56F1EC3AC5B0FE6A5 /* Release */,
+				67D085921DD744D41CA15CB4 /* Debug */,
+				C05E697CF27501148A0BB415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		948812B8259CC2F3562B80BE /* Build configuration list for PBXNativeTarget "Pods-Reosuke-AFNetworking" */ = {
+		6BDAB85F6D3C3F84C5FB158F /* Build configuration list for PBXNativeTarget "Pods-Reosuke" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B05F290DDD76219CECA31CD0 /* Debug */,
-				93E4F577EFEC30602A5DC066 /* Release */,
+				1DDB132A7DE40C12E23A359D /* Debug */,
+				48FB0DABA7AC950AD8A5BDB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E434846875620E52E894CFB /* Build configuration list for PBXNativeTarget "Pods-Reosuke" */ = {
+		EF8A70B6267A599CC6A4D241 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-REFrostedViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2DC250C34AD3F9127753BDD /* Debug */,
-				7C2E11E4DB1743652228B119 /* Release */,
+				1B73CBF5C5893CC9EA773756 /* Debug */,
+				7156AAE0E6FF57E69F6378AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C31F2E1F98F151344331781D /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RNFrostedSidebar" */ = {
+		F7F00EB9CB2F3640B57C2A9A /* Build configuration list for PBXNativeTarget "Pods-Reosuke-RESideMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C536281E4320981F46B504F7 /* Debug */,
-				29816E09E786E0060C4A8D7A /* Release */,
+				E7695CB075500E1757421921 /* Debug */,
+				AA523A67C3EBC52F6EC485FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0593BE2574DADA15A9BA550 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-MSCollectionViewCalendarLayout" */ = {
+		FB3941103B76758770297165 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A00B6F40603A52139F4F7E8 /* Debug */,
-				A850E88D179A282B11040CDD /* Release */,
+				FC5BDB001F739783E0A85C49 /* Debug */,
+				D876D8AE6B6439DD34FA1029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE60080AF591A2A46DD74766 /* Build configuration list for PBXNativeTarget "Pods-Reosuke-MSCollectionViewCalendarLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19BCC86887B22D34B80E332B /* Debug */,
+				CBA5D37B4EC35A856563412A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9CC59D0C6E7382EE60488402 /* Project object */;
+	rootObject = 82F68333A2B9C452D5CFF110 /* Project object */;
 }

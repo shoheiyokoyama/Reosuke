@@ -1,6 +1,6 @@
 #include "Pods-Reosuke-REFrostedViewController.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/REFrostedViewController" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/MSCollectionViewCalendarLayout" "${PODS_ROOT}/Headers/Public/REFrostedViewController" "${PODS_ROOT}/Headers/Public/RESideMenu" "${PODS_ROOT}/Headers/Public/RNFrostedSidebar"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/REFrostedViewController" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/MSCollectionViewCalendarLayout" "${PODS_ROOT}/Headers/Public/REFrostedViewController" "${PODS_ROOT}/Headers/Public/RESideMenu" "${PODS_ROOT}/Headers/Public/RNFrostedSidebar" "${PODS_ROOT}/Headers/Public/SVProgressHUD"
 OTHER_LDFLAGS = ${PODS_REOSUKE_REFROSTEDVIEWCONTROLLER_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES

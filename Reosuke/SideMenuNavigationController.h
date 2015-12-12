@@ -10,4 +10,5 @@
 
 @interface SideMenuNavigationController : UINavigationController
 - (void)showMenu;
+
 @end

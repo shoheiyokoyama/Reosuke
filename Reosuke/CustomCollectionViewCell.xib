@@ -13,23 +13,46 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8VL-Jk-JWv">
-                        <rect key="frame" x="8" y="8" width="95" height="100"/>
+                        <rect key="frame" x="36" y="8" width="100" height="100"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shop label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wna-3N-Nvg">
-                        <rect key="frame" x="123" y="71" width="189" height="37"/>
+                        <rect key="frame" x="150" y="8" width="162" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJl-0F-DzX">
+                        <rect key="frame" x="8" y="46" width="19" height="23"/>
+                        <state key="normal" title="Button" image="back"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8z-fx-JKU">
+                        <rect key="frame" x="293" y="46" width="19" height="23"/>
+                        <state key="normal" title="Button" image="next"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-x2-bmy">
+                        <rect key="frame" x="150" y="63" width="135" height="39"/>
+                        <color key="backgroundColor" red="0.24705882352941178" green="0.76470588235294112" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <size key="customSize" width="150" height="89"/>
             <connections>
+                <outlet property="backButton" destination="ZJl-0F-DzX" id="Uw4-HN-Wjp"/>
+                <outlet property="nextButton" destination="d8z-fx-JKU" id="2zW-X3-LzK"/>
+                <outlet property="okLabel" destination="9x0-x2-bmy" id="2mc-Do-9dD"/>
                 <outlet property="shopImage" destination="8VL-Jk-JWv" id="flP-YZ-kWx"/>
                 <outlet property="shopName" destination="Wna-3N-Nvg" id="OuZ-lN-piR"/>
             </connections>
-            <point key="canvasLocation" x="420" y="275"/>
+            <point key="canvasLocation" x="312" y="253"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="back" width="22" height="38"/>
+        <image name="next" width="22" height="38"/>
+    </resources>
 </document>

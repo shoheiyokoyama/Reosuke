@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)]];
+    self.navigationItem.title = @"aaaa";
 }
 
 - (void)didReceiveMemoryWarning {

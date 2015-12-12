@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Reosuke-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Reosuke.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>21AF6E26516EA2B5E5783360</key>
+		<key>03B2A7FE2A64606073F19A94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5136E9CF200E96F4BBCEAAF2</key>
+		<key>08F9C72FA94ADB685635FD63</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C345B9EBBC8F0FE2B7F24C0</key>
+		<key>441B10F24CABA01B17164561</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8D6483EF71D593B34F1B74BF</key>
+		<key>5B5B1B29A942121B9AD13EF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EB519039CA429E0BB1F31111</key>
+		<key>E3FB870AB860EA21B3B1A65C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF1604A41DDEA1A694A09EDF</key>
+		<key>EFCB40082427AB9906375086</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE682BD52CA501BD83CECEAD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

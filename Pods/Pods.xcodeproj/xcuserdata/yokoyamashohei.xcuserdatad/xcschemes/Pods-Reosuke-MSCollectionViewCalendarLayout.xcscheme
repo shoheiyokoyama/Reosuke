@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5136E9CF200E96F4BBCEAAF2"
+               BlueprintIdentifier = "5B5B1B29A942121B9AD13EF6"
                BuildableName = "libPods-Reosuke-MSCollectionViewCalendarLayout.a"
                BlueprintName = "Pods-Reosuke-MSCollectionViewCalendarLayout"
                ReferencedContainer = "container:Pods.xcodeproj">

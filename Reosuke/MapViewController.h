@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapViewController : UIViewController
 
+@class MapView;
+@protocol MapViewDelegate <NSObject>
+@optional
+- (void)tappedCell:(NSArray *)array;
+@end
+
+@interface MapViewController : UIViewController
+@property (nonatomic, weak) id<MapViewDelegate> delegate;
 @end
