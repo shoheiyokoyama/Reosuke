@@ -103,6 +103,7 @@
                                                                              style:UIBarButtonItemStylePlain
                                                                             target:(SideMenuNavigationController *)self.navigationController
                                                                             action:@selector(showMenu)];
+    self.navigationItem.title = @"Reosuke";
 //    SideMenuNavigationController.title = @"Reosuke";
     
 }

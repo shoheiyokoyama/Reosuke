@@ -54,6 +54,7 @@
         
         [SVProgressHUD dismiss];
         [SVProgressHUD showSuccessWithStatus:@"見つかりました！"];
+        self.navigationItem.title = @"おすすめのお店";
     } area:@"新宿"];
 }
 
@@ -71,6 +72,8 @@
 //                                                                             style:UIBarButtonItemStylePlain
 //                                                                            target:(SideMenuNavigationController *)self.navigationController
 //                                                                            action:@selector(showMenu)];
+    
+    self.navigationItem.title = @"おすすめのお店";
     
     self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     self.mapView.frame = self.view.bounds;
@@ -122,13 +125,13 @@
     [self.foodButton setTitle:@"food" forState:UIControlStateNormal];
     [self.foodButton.titleLabel setFont:[UIFont systemFontOfSize:13]];
     [self.foodButton addTarget:self action:@selector(tapFoodButton:) forControlEvents:UIControlEventTouchDown];
-    self.foodButton.backgroundColor = [UIColor colorWithRed:242.0f/255.0f green:120.0f/255.0f blue:75.0f/255.0f alpha:1.0f];
+    self.foodButton.backgroundColor = [UIColor colorWithRed:65.0f/255.0f green:131.0f/255.0f blue:215.0f/255.0f alpha:1.0f];
     self.foodButton.layer.cornerRadius = 3.0f;
     [self.view addSubview:self.foodButton];
     
     self.sightseeingButton = [[UIButton alloc] initWithFrame:CGRectMake(160.0f, 430.0f, 80.0f, 20.0f)];
     [self.sightseeingButton setTitle:@"sightseeing" forState:UIControlStateNormal];
-    self.sightseeingButton.backgroundColor = [UIColor colorWithRed:65.0f/255.0f green:131.0f/255.0f blue:215.0f/255.0f alpha:1.0f];
+    self.sightseeingButton.backgroundColor = [UIColor colorWithRed:242.0f/255.0f green:120.0f/255.0f blue:75.0f/255.0f alpha:1.0f];
     [self.sightseeingButton addTarget:self action:@selector(tapSightseeingButton:) forControlEvents:UIControlEventTouchDown];
     [self.sightseeingButton.titleLabel setFont:[UIFont systemFontOfSize:13]];
     self.sightseeingButton.layer.cornerRadius = 3.0f;
@@ -158,7 +161,14 @@
     [self.view sendSubviewToBack:self.sightseeingButton];
     [self.view sendSubviewToBack:self.mapView];
     
-    [self getData:@"パブリックビューイングの場所を探しています"];
+//    [self getData:@"パブリックビューイングの場所を探しています"];
+    [SVProgressHUD showWithStatus:@"あなたへのおすすめの\n観戦会場を探しています" maskType:SVProgressHUDMaskTypeGradient];
+    NSTimer *tim = [NSTimer scheduledTimerWithTimeInterval:3.0f
+                                                    target:self
+                                                  selector:@selector(finish)
+                                                  userInfo:nil
+                                                   repeats:NO];
+    
     self.isSightseeing = NO;
     self.isOlypic = YES;
     
@@ -177,7 +187,7 @@
     [self.view sendSubviewToBack:self.sightseeingButton];
     [self.view sendSubviewToBack:self.mapView];
     
-    [self getData:@"あなたへのおすすめのお店を探しています"];
+    [self getData:@"あなたへのおすすめの\nお店を探しています"];
     self.isSightseeing = NO;
     self.isOlypic = NO;
     
@@ -196,13 +206,31 @@
     [self.view sendSubviewToBack:self.foodButton];
     [self.view sendSubviewToBack:self.mapView];
     
-    [self getData:@"あなたへのおすすめの観光地を探しています"];
+//    [self getData:@"あなたへのおすすめの観光地を探しています"];
+    [SVProgressHUD showWithStatus:@"あなたへのおすすめの\n観光地を探しています" maskType:SVProgressHUDMaskTypeGradient];
+    NSTimer *tim = [NSTimer scheduledTimerWithTimeInterval:3.0f
+                                                   target:self
+                                                 selector:@selector(finish)
+                                                 userInfo:nil
+                                                  repeats:NO];
     self.isSightseeing = YES;
     self.isOlypic = NO;
     
     self.olympicButton.alpha = 0.7f;
     self.foodButton.alpha = 0.7f;
     self.sightseeingButton.alpha = 1.0f;
+}
+
+- (void)finish {
+    [self.collectionView reloadData];
+    [SVProgressHUD dismiss];
+    [SVProgressHUD showSuccessWithStatus:@"見つかりました！"];
+    
+    if (self.isOlypic) {
+        self.navigationItem.title = @"おすすめの観戦会場";
+    } else {
+        self.navigationItem.title = @"おすすめの観光地";
+    }
 }
 
 #pragma -mark CustomCollectionViewCellDelegate

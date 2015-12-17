@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Reosuke/MapViewController.m"
-            timestampString = "471615548.442355"
+            timestampString = "472013226.724955"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "267"
+            endingLineNumber = "267"
             landmarkName = "-displayAnnotation:"
             landmarkType = "5">
          </BreakpointContent>
